@@ -1,0 +1,8 @@
+eagle.epf
+
+*.swo
+*.swp
+*.b#*
+*.s#*
+*.job
+*.pro
