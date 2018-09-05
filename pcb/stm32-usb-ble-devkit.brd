@@ -2339,7 +2339,7 @@ Design rules for single and two layer boards.
 <wire x1="15.73" y1="38.57" x2="19" y2="35.3" width="0.4" layer="16"/>
 <wire x1="5.78649375" y1="38.57" x2="15.73" y2="38.57" width="0.4" layer="16"/>
 </signal>
-<signal name="GND" airwireshidden="yes">
+<signal name="GND">
 <contactref element="U1" pad="47"/>
 <contactref element="U1" pad="35"/>
 <contactref element="U1" pad="23"/>
