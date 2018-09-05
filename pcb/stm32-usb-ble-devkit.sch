@@ -255,8 +255,8 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="1" x="-0.8625" y="0" dx="0.975" dy="1.1" layer="1"/>
+<smd name="2" x="0.8625" y="0" dx="0.975" dy="1.1" layer="1"/>
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
@@ -723,33 +723,41 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <wire x1="0.9" y1="0.9" x2="-0.9" y2="0.9" width="0.127" layer="21"/>
 </package>
 <package name="USB-C-FEMALE">
-<smd name="B7" x="0.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A6" x="0.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="B8" x="1.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A5" x="1.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A7" x="-0.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="B6" x="-0.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A8" x="-1.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="B5" x="-1.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A9" x="-2.4" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<smd name="A4" x="2.4" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<smd name="A12" x="-3.2" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<smd name="A1" x="3.2" y="7.355" dx="0.6" dy="1.15" layer="1"/>
+<smd name="B7" x="-0.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A6" x="-0.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
+<smd name="B8" x="-1.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A5" x="-1.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A7" x="0.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
+<smd name="B6" x="0.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A8" x="1.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
+<smd name="B5" x="1.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A9" x="2.4" y="7.355" dx="0.6" dy="1.15" layer="1"/>
+<smd name="A4" x="-2.4" y="7.355" dx="0.6" dy="1.15" layer="1"/>
+<smd name="A12" x="3.2" y="7.355" dx="0.6" dy="1.15" layer="1"/>
+<smd name="A1" x="-3.2" y="7.355" dx="0.6" dy="1.15" layer="1"/>
 <hole x="2.89" y="6.28" drill="0.65"/>
 <hole x="-2.89" y="6.28" drill="0.65"/>
 <pad name="G3" x="-4.32" y="2.6" drill="0.6" shape="long" rot="R90"/>
 <pad name="G1" x="4.32" y="6.78" drill="0.6" shape="long" rot="R90"/>
-<wire x1="4.32" y1="7.33" x2="4.32" y2="6.23" width="0.6" layer="46"/>
 <pad name="G2" x="-4.32" y="6.78" drill="0.6" shape="long" rot="R90"/>
-<wire x1="-4.32" y1="7.33" x2="-4.32" y2="6.23" width="0.6" layer="46"/>
-<wire x1="-4.32" y1="2.9" x2="-4.32" y2="2.3" width="0.6" layer="46"/>
 <pad name="G4" x="4.32" y="2.6" drill="0.6" shape="long" rot="R90"/>
-<wire x1="4.32" y1="2.9" x2="4.32" y2="2.3" width="0.6" layer="46"/>
 <wire x1="-4.47" y1="7.35" x2="-4.47" y2="0" width="0.1" layer="21"/>
 <wire x1="-4.47" y1="0" x2="4.47" y2="0" width="0.1" layer="21"/>
 <wire x1="4.47" y1="0" x2="4.47" y2="7.35" width="0.1" layer="21"/>
 <wire x1="4.47" y1="7.35" x2="-4.47" y2="7.35" width="0.1" layer="21"/>
 <text x="6" y="0" size="1.27" layer="25">&gt;NAME</text>
+<hole x="-4.32" y="2.9" drill="0.6"/>
+<hole x="-4.32" y="2.3" drill="0.6"/>
+<hole x="4.32" y="2.9" drill="0.6"/>
+<hole x="4.32" y="2.3" drill="0.6"/>
+<hole x="-4.32" y="6.23" drill="0.6"/>
+<hole x="-4.32" y="7.33" drill="0.6"/>
+<hole x="-4.32" y="7.055" drill="0.6"/>
+<hole x="-4.32" y="6.505" drill="0.6"/>
+<hole x="4.32" y="6.23" drill="0.6"/>
+<hole x="4.32" y="7.33" drill="0.6"/>
+<hole x="4.32" y="7.055" drill="0.6"/>
+<hole x="4.32" y="6.505" drill="0.6"/>
 </package>
 <package name="HOLYIOT-17051-NRF51822">
 <pad name="1" x="-11" y="9" drill="0.6" shape="square"/>
@@ -1553,6 +1561,7 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 </devices>
 </deviceset>
 <deviceset name="USB-C-2.0-FEMALE" prefix="CN">
+<description>90° female USB-C socket up to USB 2.0</description>
 <gates>
 <gate name="G$1" symbol="USB-C-2.0" x="0" y="0"/>
 </gates>
@@ -5594,13 +5603,6 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="1206" urn="urn:adsk.eagle:package:15796/1" type="box" library_version="2">
-<description>CHICAGO MINIATURE LAMP, INC.
-7022X Series SMT LEDs 1206 Package Size</description>
-<packageinstances>
-<packageinstance name="1206"/>
-</packageinstances>
-</package3d>
 <package3d name="LD260" urn="urn:adsk.eagle:package:15794/1" type="box" library_version="2">
 <description>LED
 5 mm, square, Siemens</description>
@@ -5889,6 +5891,13 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <packageinstance name="SML0603"/>
 </packageinstances>
 </package3d>
+<package3d name="1206" urn="urn:adsk.eagle:package:15796/2" type="model" library_version="3">
+<description>CHICAGO MINIATURE LAMP, INC.
+7022X Series SMT LEDs 1206 Package Size</description>
+<packageinstances>
+<packageinstance name="1206"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="LED" urn="urn:adsk.eagle:symbol:15639/1" library_version="2">
@@ -5918,7 +5927,7 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED" urn="urn:adsk.eagle:component:15916/7" prefix="LED" uservalue="yes" library_version="2">
+<deviceset name="LED" urn="urn:adsk.eagle:component:15916/8" prefix="LED" uservalue="yes" library_version="3">
 <description>&lt;b&gt;LED&lt;/b&gt;&lt;p&gt;
 &lt;u&gt;OSRAM&lt;/u&gt;:&lt;br&gt;
 
@@ -6004,7 +6013,7 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15796/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15796/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
