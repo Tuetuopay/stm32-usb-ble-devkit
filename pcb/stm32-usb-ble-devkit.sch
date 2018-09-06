@@ -6620,6 +6620,13 @@ Source: www.kingbright.com</description>
 <part name="TP13" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 <part name="C20" library="tuetuopay" deviceset="C" device="0805" value="100n"/>
 <part name="C21" library="tuetuopay" deviceset="C" device="0805" value="100n"/>
+<part name="R17" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
+<part name="R19" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
+<part name="R21" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
+<part name="R30" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
+<part name="R31" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
+<part name="+3V19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7289,21 +7296,21 @@ UART switch</text>
 <instance part="GND17" gate="1" x="45.72" y="55.88"/>
 <instance part="R11" gate="G$1" x="45.72" y="66.04" rot="R90"/>
 <instance part="GND18" gate="1" x="40.64" y="73.66"/>
-<instance part="TP4" gate="G$1" x="137.16" y="162.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.59" y="164.084" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="139.7" y="163.83" size="1.778" layer="97" rot="R90"/>
+<instance part="TP4" gate="G$1" x="144.78" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="156.21" y="52.324" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="147.32" y="52.07" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP5" gate="G$1" x="137.16" y="160.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.59" y="161.544" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="139.7" y="161.29" size="1.778" layer="97" rot="R90"/>
+<instance part="TP5" gate="G$1" x="144.78" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="156.21" y="49.784" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="147.32" y="49.53" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP6" gate="G$1" x="137.16" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.59" y="159.004" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="139.7" y="158.75" size="1.778" layer="97" rot="R90"/>
+<instance part="TP6" gate="G$1" x="144.78" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="156.21" y="47.244" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="147.32" y="46.99" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP7" gate="G$1" x="137.16" y="154.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.59" y="156.464" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="139.7" y="156.21" size="1.778" layer="97" rot="R90"/>
+<instance part="TP7" gate="G$1" x="144.78" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="156.21" y="44.704" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="147.32" y="44.45" size="1.778" layer="97" rot="R90"/>
 </instance>
 <instance part="C11" gate="&gt;NAME" x="15.24" y="154.94" rot="R180"/>
 <instance part="C12" gate="&gt;NAME" x="22.86" y="154.94" rot="R180"/>
@@ -7320,30 +7327,30 @@ UART switch</text>
 <instance part="R24" gate="G$1" x="190.5" y="50.8" rot="R90"/>
 <instance part="R25" gate="G$1" x="198.12" y="50.8" rot="R90"/>
 <instance part="+3V22" gate="G$1" x="175.26" y="73.66"/>
-<instance part="U5" gate="G$1" x="195.58" y="134.62"/>
-<instance part="+3V21" gate="G$1" x="195.58" y="170.18"/>
-<instance part="GND31" gate="1" x="198.12" y="101.6"/>
-<instance part="C17" gate="&gt;NAME" x="200.66" y="165.1" rot="R90"/>
-<instance part="GND32" gate="1" x="208.28" y="160.02"/>
-<instance part="TP8" gate="G$1" x="236.22" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="247.65" y="151.384" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="238.76" y="151.13" size="1.778" layer="97" rot="R90"/>
+<instance part="U5" gate="G$1" x="200.66" y="134.62"/>
+<instance part="+3V21" gate="G$1" x="200.66" y="170.18"/>
+<instance part="GND31" gate="1" x="203.2" y="101.6"/>
+<instance part="C17" gate="&gt;NAME" x="205.74" y="165.1" rot="R90"/>
+<instance part="GND32" gate="1" x="213.36" y="160.02"/>
+<instance part="TP8" gate="G$1" x="241.3" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="252.73" y="151.384" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="243.84" y="151.13" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP9" gate="G$1" x="236.22" y="144.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="247.65" y="146.304" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="238.76" y="146.05" size="1.778" layer="97" rot="R90"/>
+<instance part="TP9" gate="G$1" x="241.3" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="252.73" y="146.304" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="243.84" y="146.05" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP10" gate="G$1" x="154.94" y="144.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="140.97" y="143.256" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="152.4" y="143.51" size="1.778" layer="97" rot="R270"/>
+<instance part="TP10" gate="G$1" x="160.02" y="144.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="146.05" y="143.256" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="157.48" y="143.51" size="1.778" layer="97" rot="R270"/>
 </instance>
-<instance part="TP11" gate="G$1" x="154.94" y="142.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="140.97" y="140.716" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="152.4" y="140.97" size="1.778" layer="97" rot="R270"/>
+<instance part="TP11" gate="G$1" x="160.02" y="142.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="146.05" y="140.716" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="157.48" y="140.97" size="1.778" layer="97" rot="R270"/>
 </instance>
-<instance part="TP12" gate="G$1" x="167.64" y="119.38" smashed="yes" rot="R270">
-<attribute name="NAME" x="161.29" y="120.396" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="165.1" y="118.11" size="1.778" layer="97" rot="R270"/>
+<instance part="TP12" gate="G$1" x="172.72" y="119.38" smashed="yes" rot="R270">
+<attribute name="NAME" x="166.37" y="120.396" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="170.18" y="118.11" size="1.778" layer="97" rot="R270"/>
 </instance>
 <instance part="JP8" gate="A" x="152.4" y="88.9"/>
 <instance part="LED7" gate="G$1" x="215.9" y="63.5"/>
@@ -7355,8 +7362,30 @@ UART switch</text>
 <instance part="R28" gate="G$1" x="231.14" y="50.8" rot="R90"/>
 <instance part="R29" gate="G$1" x="238.76" y="50.8" rot="R90"/>
 <instance part="+3V23" gate="G$1" x="215.9" y="73.66"/>
-<instance part="JP9" gate="A" x="157.48" y="55.88"/>
+<instance part="JP9" gate="A" x="149.86" y="22.86"/>
 <instance part="JP10" gate="A" x="241.3" y="88.9"/>
+<instance part="R17" gate="G$1" x="121.92" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.142" y="151.13" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="120.142" y="153.67" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R19" gate="G$1" x="127" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="125.222" y="151.13" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="125.222" y="153.67" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R21" gate="G$1" x="119.38" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="117.602" y="125.73" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="117.602" y="128.27" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R30" gate="G$1" x="124.46" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="122.682" y="125.73" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="122.682" y="128.27" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R31" gate="G$1" x="129.54" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="127.762" y="125.73" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="127.762" y="128.27" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V19" gate="G$1" x="124.46" y="165.1"/>
+<instance part="GND28" gate="1" x="124.46" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -7425,13 +7454,26 @@ UART switch</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
 <pinref part="GND31" gate="1" pin="GND"/>
-<wire x1="198.12" y1="104.14" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="104.14" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C17" gate="&gt;NAME" pin="2"/>
 <pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="205.74" y1="165.1" x2="208.28" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="165.1" x2="208.28" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="165.1" x2="213.36" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="165.1" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="121.92" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R31" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="119.38" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="121.92" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<junction x="124.46" y="119.38"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="124.46" y1="116.84" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -7496,10 +7538,10 @@ UART switch</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="VDD"/>
 <pinref part="+3V21" gate="G$1" pin="+3V3"/>
-<wire x1="195.58" y1="167.64" x2="195.58" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="165.1" x2="195.58" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="165.1" x2="198.12" y2="165.1" width="0.1524" layer="91"/>
-<junction x="195.58" y="165.1"/>
+<wire x1="200.66" y1="167.64" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="165.1" x2="200.66" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="165.1" x2="203.2" y2="165.1" width="0.1524" layer="91"/>
+<junction x="200.66" y="165.1"/>
 <pinref part="C17" gate="&gt;NAME" pin="1"/>
 </segment>
 <segment>
@@ -7519,6 +7561,17 @@ UART switch</text>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
 <wire x1="215.9" y1="68.58" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
 <junction x="215.9" y="68.58"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="157.48" x2="121.92" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="160.02" x2="124.46" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="160.02" x2="127" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="127" y1="160.02" x2="127" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="+3V19" gate="G$1" pin="+3V3"/>
+<wire x1="124.46" y1="162.56" x2="124.46" y2="160.02" width="0.1524" layer="91"/>
+<junction x="124.46" y="160.02"/>
 </segment>
 </net>
 <net name="STM_OSC_IN" class="0">
@@ -7625,49 +7678,65 @@ UART switch</text>
 <net name="SPI_SCK" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA5"/>
-<wire x1="93.98" y1="139.7" x2="99.06" y2="139.7" width="0.1524" layer="91"/>
-<label x="99.06" y="139.7" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="139.7" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
+<label x="132.08" y="139.7" size="1.27" layer="95" xref="yes"/>
+<pinref part="R31" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="132.08" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
+<junction x="129.54" y="139.7"/>
 </segment>
 <segment>
-<label x="220.98" y="137.16" size="1.27" layer="95" xref="yes"/>
+<label x="226.06" y="137.16" size="1.27" layer="95" xref="yes"/>
 <pinref part="U5" gate="G$1" pin="P0.06"/>
-<wire x1="215.9" y1="137.16" x2="220.98" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="137.16" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI_MISO" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA6"/>
-<wire x1="93.98" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
-<label x="99.06" y="137.16" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="137.16" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
+<label x="132.08" y="137.16" size="1.27" layer="95" xref="yes"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="137.16" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="132.08" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
+<junction x="124.46" y="137.16"/>
 </segment>
 <segment>
-<label x="220.98" y="134.62" size="1.27" layer="95" xref="yes"/>
+<label x="226.06" y="134.62" size="1.27" layer="95" xref="yes"/>
 <pinref part="U5" gate="G$1" pin="P0.07"/>
-<wire x1="215.9" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="134.62" x2="226.06" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI_MOSI" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA7"/>
-<wire x1="93.98" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
-<label x="99.06" y="134.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
+<label x="132.08" y="134.62" size="1.27" layer="95" xref="yes"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="134.62" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="132.08" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
+<junction x="119.38" y="134.62"/>
 </segment>
 <segment>
-<label x="220.98" y="132.08" size="1.27" layer="95" xref="yes"/>
+<label x="226.06" y="132.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="U5" gate="G$1" pin="P0.08"/>
-<wire x1="215.9" y1="132.08" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="132.08" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI_IRQ" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA4"/>
-<wire x1="93.98" y1="142.24" x2="99.06" y2="142.24" width="0.1524" layer="91"/>
-<label x="99.06" y="142.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="142.24" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
+<label x="132.08" y="142.24" size="1.27" layer="95" xref="yes"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="142.24" x2="132.08" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="147.32" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
+<junction x="121.92" y="142.24"/>
 </segment>
 <segment>
-<label x="220.98" y="139.7" size="1.27" layer="95" xref="yes"/>
+<label x="226.06" y="139.7" size="1.27" layer="95" xref="yes"/>
 <pinref part="U5" gate="G$1" pin="P0.05"/>
-<wire x1="215.9" y1="139.7" x2="220.98" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="139.7" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STM_TX" class="0">
@@ -7763,8 +7832,8 @@ UART switch</text>
 <net name="STM_DBG_TP_0" class="0">
 <segment>
 <pinref part="TP4" gate="G$1" pin="TP"/>
-<wire x1="129.54" y1="162.56" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
-<label x="129.54" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="137.16" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
+<label x="137.16" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PB4"/>
@@ -7775,8 +7844,8 @@ UART switch</text>
 <net name="STM_DBG_TP_1" class="0">
 <segment>
 <pinref part="TP5" gate="G$1" pin="TP"/>
-<wire x1="134.62" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
-<label x="129.54" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="48.26" x2="137.16" y2="48.26" width="0.1524" layer="91"/>
+<label x="137.16" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PB5"/>
@@ -7787,8 +7856,8 @@ UART switch</text>
 <net name="STM_DBG_TP_2" class="0">
 <segment>
 <pinref part="TP6" gate="G$1" pin="TP"/>
-<wire x1="129.54" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
-<label x="129.54" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="137.16" y1="45.72" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
+<label x="137.16" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PB8"/>
@@ -7799,8 +7868,8 @@ UART switch</text>
 <net name="STM_DBG_TP_3" class="0">
 <segment>
 <pinref part="TP7" gate="G$1" pin="TP"/>
-<wire x1="134.62" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
-<label x="129.54" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<label x="137.16" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PB9"/>
@@ -7860,8 +7929,8 @@ UART switch</text>
 <net name="NRF_LED0" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.22"/>
-<wire x1="175.26" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
-<label x="170.18" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="137.16" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
+<label x="175.26" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
@@ -7873,8 +7942,8 @@ UART switch</text>
 <net name="NRF_LED1" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.23"/>
-<wire x1="175.26" y1="134.62" x2="170.18" y2="134.62" width="0.1524" layer="91"/>
-<label x="170.18" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
+<label x="175.26" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
@@ -7886,8 +7955,8 @@ UART switch</text>
 <net name="NRF_LED2" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.24"/>
-<wire x1="175.26" y1="132.08" x2="170.18" y2="132.08" width="0.1524" layer="91"/>
-<label x="170.18" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
+<label x="175.26" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R28" gate="G$1" pin="1"/>
@@ -7899,8 +7968,8 @@ UART switch</text>
 <net name="NRF_LED3" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.25"/>
-<wire x1="175.26" y1="129.54" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
-<label x="170.18" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
+<label x="175.26" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R29" gate="G$1" pin="1"/>
@@ -7912,8 +7981,8 @@ UART switch</text>
 <net name="NRF_LOCAL_TX" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.12"/>
-<wire x1="215.9" y1="121.92" x2="220.98" y2="121.92" width="0.1524" layer="91"/>
-<label x="220.98" y="121.92" size="1.27" layer="95" xref="yes"/>
+<wire x1="220.98" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
+<label x="226.06" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP8" gate="A" pin="4"/>
@@ -7924,8 +7993,8 @@ UART switch</text>
 <net name="NRF_LOCAL_RX" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.11"/>
-<wire x1="215.9" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
-<label x="220.98" y="124.46" size="1.27" layer="95" xref="yes"/>
+<wire x1="220.98" y1="124.46" x2="226.06" y2="124.46" width="0.1524" layer="91"/>
+<label x="226.06" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP8" gate="A" pin="3"/>
@@ -7936,52 +8005,52 @@ UART switch</text>
 <net name="NRF_SWDIO" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="SWDIO/NRST"/>
-<wire x1="175.26" y1="116.84" x2="172.72" y2="116.84" width="0.1524" layer="91"/>
-<label x="170.18" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="116.84" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
+<label x="175.26" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="TP12" gate="G$1" pin="TP"/>
-<wire x1="172.72" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="119.38" x2="172.72" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="119.38" x2="172.72" y2="116.84" width="0.1524" layer="91"/>
-<junction x="172.72" y="116.84"/>
+<wire x1="177.8" y1="116.84" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="119.38" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="119.38" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
+<junction x="177.8" y="116.84"/>
 </segment>
 </net>
 <net name="NRF_SWCLK" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="SWCLK"/>
-<wire x1="175.26" y1="114.3" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
-<label x="170.18" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="114.3" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
+<label x="175.26" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="NRF_DBG_TP_2" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.19"/>
-<wire x1="175.26" y1="144.78" x2="157.48" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="TP10" gate="G$1" pin="TP"/>
-<label x="157.48" y="144.78" size="1.27" layer="95"/>
+<label x="162.56" y="144.78" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="NRF_DBG_TP_3" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.20"/>
-<wire x1="175.26" y1="142.24" x2="157.48" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="TP11" gate="G$1" pin="TP"/>
-<label x="157.48" y="142.24" size="1.27" layer="95"/>
+<label x="162.56" y="142.24" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="NRF_DBG_TP_0" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.01"/>
-<wire x1="215.9" y1="149.86" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="TP8" gate="G$1" pin="TP"/>
-<label x="220.98" y="149.86" size="1.27" layer="95"/>
+<label x="226.06" y="149.86" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="NRF_DBG_TP_1" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.03"/>
-<wire x1="215.9" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="TP9" gate="G$1" pin="TP"/>
-<label x="220.98" y="144.78" size="1.27" layer="95"/>
+<label x="226.06" y="144.78" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="NRF_RX" class="0">
@@ -8034,8 +8103,8 @@ UART switch</text>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.13"/>
-<wire x1="215.9" y1="119.38" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
-<label x="220.98" y="119.38" size="1.27" layer="95" xref="yes"/>
+<wire x1="220.98" y1="119.38" x2="226.06" y2="119.38" width="0.1524" layer="91"/>
+<label x="226.06" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="NRF_DBG_PIN_1" class="0">
@@ -8046,8 +8115,8 @@ UART switch</text>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.14"/>
-<wire x1="215.9" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
-<label x="220.98" y="116.84" size="1.27" layer="95" xref="yes"/>
+<wire x1="220.98" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
+<label x="226.06" y="116.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="NRF_DBG_PIN_2" class="0">
@@ -8058,8 +8127,8 @@ UART switch</text>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.15"/>
-<wire x1="215.9" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
-<label x="220.98" y="114.3" size="1.27" layer="95" xref="yes"/>
+<wire x1="220.98" y1="114.3" x2="226.06" y2="114.3" width="0.1524" layer="91"/>
+<label x="226.06" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="NRF_DBG_PIN_3" class="0">
@@ -8070,15 +8139,15 @@ UART switch</text>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.16"/>
-<wire x1="175.26" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
-<label x="170.18" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="152.4" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
+<label x="175.26" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="STM_DBG_PIN2" class="0">
 <segment>
 <pinref part="JP9" gate="A" pin="3"/>
-<wire x1="147.32" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
-<label x="147.32" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="139.7" y1="22.86" x2="147.32" y2="22.86" width="0.1524" layer="91"/>
+<label x="139.7" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PB2"/>
@@ -8094,8 +8163,8 @@ UART switch</text>
 </segment>
 <segment>
 <pinref part="JP9" gate="A" pin="1"/>
-<wire x1="147.32" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
-<label x="147.32" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="139.7" y1="27.94" x2="147.32" y2="27.94" width="0.1524" layer="91"/>
+<label x="139.7" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="STM_DBG_PIN1" class="0">
@@ -8106,8 +8175,8 @@ UART switch</text>
 </segment>
 <segment>
 <pinref part="JP9" gate="A" pin="2"/>
-<wire x1="154.94" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
-<label x="147.32" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="147.32" y1="25.4" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
+<label x="139.7" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="STM_DBG_PIN3" class="0">
@@ -8118,20 +8187,24 @@ UART switch</text>
 </segment>
 <segment>
 <pinref part="JP9" gate="A" pin="4"/>
-<wire x1="154.94" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
-<label x="147.32" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="147.32" y1="20.32" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
+<label x="139.7" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_CS" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA3"/>
-<wire x1="93.98" y1="144.78" x2="99.06" y2="144.78" width="0.1524" layer="91"/>
-<label x="99.06" y="144.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
+<label x="132.08" y="144.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="127" y1="144.78" x2="132.08" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="127" y1="147.32" x2="127" y2="144.78" width="0.1524" layer="91"/>
+<junction x="127" y="144.78"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.09"/>
-<wire x1="215.9" y1="129.54" x2="220.98" y2="129.54" width="0.1524" layer="91"/>
-<label x="220.98" y="129.54" size="1.27" layer="95" xref="yes"/>
+<wire x1="220.98" y1="129.54" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
+<label x="226.06" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
