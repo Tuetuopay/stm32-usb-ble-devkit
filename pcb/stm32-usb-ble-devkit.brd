@@ -1552,7 +1552,7 @@ Design rules for single and two layer boards.
 <param name="mlMaxStopFrame" value="0.05mm"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="0.3mm"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -1841,7 +1841,7 @@ Design rules for single and two layer boards.
 <attribute name="NAME" x="19.165" y="30.635" size="0.9" layer="25"/>
 </element>
 <element name="R16" library="tuetuopay" package="R0603" value="100k" x="52.65" y="47.85" smashed="yes" rot="R180">
-<attribute name="NAME" x="50.885" y="48.265" size="0.9" layer="25" rot="R180"/>
+<attribute name="NAME" x="51.035" y="48.265" size="0.9" layer="25" rot="R180"/>
 </element>
 <element name="R18" library="tuetuopay" package="R0603" value="100k" x="11.85" y="11.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.585" y="10.085" size="0.9" layer="25" rot="R270"/>
@@ -1892,7 +1892,7 @@ Design rules for single and two layer boards.
 <attribute name="NAME" x="47.215" y="45.185" size="0.9" layer="25"/>
 </element>
 <element name="R8" library="tuetuopay" package="R0603" value="330" x="52.65" y="45.9" smashed="yes">
-<attribute name="NAME" x="49.465" y="45.485" size="0.9" layer="25"/>
+<attribute name="NAME" x="51.035" y="46.165" size="0.9" layer="25" rot="R180"/>
 </element>
 <element name="R9" library="tuetuopay" package="R0603" value="330" x="52.65" y="43.95" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.035" y="44.365" size="0.9" layer="25" rot="R180"/>
@@ -3745,11 +3745,6 @@ Design rules for single and two layer boards.
 <approved hash="7,39,2c588e3bb9f8e413"/>
 <approved hash="7,39,4d3984cfefb7bee6"/>
 <approved hash="7,39,fcde7b8a84f964fc"/>
-<approved hash="7,39,ef3cf6e7180874c3"/>
-<approved hash="7,39,847884556aad6a80"/>
-<approved hash="7,39,73692d582d275d41"/>
-<approved hash="7,39,df9bcd91123f8f94"/>
-<approved hash="7,39,80444fba02e71177"/>
 <approved hash="7,39,9217f9de68b7f170"/>
 <approved hash="7,39,158415950a6d0a7c"/>
 <approved hash="7,39,396f8c909b818aa9"/>
@@ -3775,8 +3770,6 @@ Design rules for single and two layer boards.
 <approved hash="7,39,91fad6911629b8e5"/>
 <approved hash="7,39,4e066a751956ee63"/>
 <approved hash="7,39,e879de8c1c636ff7"/>
-<approved hash="7,39,840487c6693e6afc"/>
-<approved hash="7,39,2b6904245927f143"/>
 <approved hash="7,39,001401f2ff0afeec"/>
 <approved hash="7,39,c4fcf3d73bac7641"/>
 <approved hash="7,39,1cfcc4afdfac0a47"/>
@@ -3793,6 +3786,41 @@ Design rules for single and two layer boards.
 <approved hash="19,1,b7b1b6a280a081b3"/>
 <approved hash="19,1,8fca8c05820781c8"/>
 <approved hash="19,1,3069335972db71eb"/>
+<approved hash="7,39,c3d4df2d35c271f3"/>
+<approved hash="7,39,bd53c091126da34c"/>
+<approved hash="7,39,110813cbdf58cd22"/>
+<approved hash="7,39,eab75011326e442b"/>
+<approved hash="7,39,8ecbf0b5bdca61e6"/>
+<approved hash="7,39,07029d4156d252a1"/>
+<approved hash="7,39,0464044a72b2729c"/>
+<approved hash="7,39,0464044903b1039c"/>
+<approved hash="7,39,210bfabb0358e12f"/>
+<approved hash="7,39,dbb9e64048af60f3"/>
+<approved hash="7,39,9c3ed991326dbb21"/>
+<approved hash="7,39,5f0264317ad2e6af"/>
+<approved hash="7,39,881588326dca6ded"/>
+<approved hash="7,39,a8d6e5a8b6d696e4"/>
+<approved hash="7,39,1f14d6d6ce45d820"/>
+<approved hash="7,39,d7af62d6a539e273"/>
+<approved hash="7,39,0fa85311166d8637"/>
+<approved hash="7,39,841484336ecb6eec"/>
+<approved hash="7,39,aeac6c52232d1265"/>
+<approved hash="7,39,0414043372cb72ec"/>
+<approved hash="7,39,94c16f3f3a40ed65"/>
+<approved hash="7,39,27b3e9c9c4268170"/>
+<approved hash="7,39,0414043003c803ec"/>
+<approved hash="7,39,8464844a6eb26e9c"/>
+<approved hash="7,39,8865884b6db36d9d"/>
+<approved hash="7,39,5714f9a782446c2f"/>
+<approved hash="7,39,116f402c41bf51a1"/>
+<approved hash="7,39,416f6b5c35bff5af"/>
+<approved hash="7,39,ff3a4be1f10ee9c3"/>
+<approved hash="7,39,047804546eac6e80"/>
+<approved hash="7,39,6d6e445fa620ca40"/>
+<approved hash="7,39,7a9d4891123faf92"/>
+<approved hash="7,39,8243d8bd87e06a76"/>
+<approved hash="7,39,040407c76d3f6efc"/>
+<approved hash="7,39,3d6f9f2292216e43"/>
 </errors>
 </board>
 </drawing>
