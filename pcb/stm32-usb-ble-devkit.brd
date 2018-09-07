@@ -748,7 +748,7 @@
 <rectangle x1="81.45" y1="12.9" x2="89.85" y2="37.2" layer="42"/>
 <wire x1="74.1" y1="7.05" x2="74.4" y2="7.05" width="0.15" layer="41"/>
 <wire x1="70.5" y1="46.65" x2="70.5" y2="42" width="0.15" layer="41"/>
-<wire x1="35.85" y1="41.85" x2="35.85" y2="42.9" width="0.15" layer="41"/>
+<wire x1="36" y1="41.25" x2="36" y2="42.9" width="0.15" layer="41"/>
 <wire x1="18.9" y1="30.75" x2="18.9" y2="29.4" width="0.15" layer="42"/>
 <wire x1="49.05" y1="20.85" x2="49.8" y2="20.85" width="0.15" layer="42"/>
 <text x="31.8" y="29.1" size="0.9" layer="21" rot="R270">PB0</text>
@@ -756,6 +756,9 @@
 <text x="26.1" y="28.05" size="0.9" layer="21">PB2</text>
 <text x="22.35" y="28.05" size="0.9" layer="21">PB10</text>
 <text x="11.85" y="0.75" size="0.9" layer="21">https://github.com/Tuetuopay/stm32-usb-ble-devkit</text>
+<wire x1="15.3" y1="9.6" x2="15.3" y2="9.3" width="0.15" layer="41"/>
+<wire x1="13.95" y1="32.55" x2="13.95" y2="32.25" width="0.15" layer="41"/>
+<wire x1="24.6" y1="10.5" x2="25.2" y2="10.5" width="0.15" layer="41"/>
 </plain>
 <libraries>
 <library name="tuetuopay">
@@ -1556,7 +1559,7 @@ Design rules for single and two layer boards.
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="0.3mm"/>
+<param name="slThermalIsolate" value="0.15mm"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
@@ -1974,7 +1977,7 @@ Design rules for single and two layer boards.
 </element>
 <element name="U6" library="tuetuopay" package="SOT223" value="AMS1117-3.3" x="28.8" y="37.05" smashed="yes" rot="R270"/>
 <element name="JP11" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X03" package3d_urn="urn:adsk.eagle:package:22462/2" value="" x="48.15" y="19.95" smashed="yes">
-<attribute name="NAME" x="44.24" y="20.305" size="0.9" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="43.79" y="20.455" size="0.9" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="44.34" y="15.505" size="1.27" layer="27"/>
 </element>
 <element name="JP12" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X03" package3d_urn="urn:adsk.eagle:package:22462/2" value="" x="48.15" y="14.85" smashed="yes">
@@ -2157,23 +2160,24 @@ Design rules for single and two layer boards.
 <contactref element="TP1" pad="TP"/>
 <wire x1="30.75" y1="46.35" x2="32.1" y2="45" width="0.15" layer="1"/>
 <wire x1="32.1" y1="45" x2="32.1" y2="42.45" width="0.15" layer="1"/>
-<wire x1="32.625" y1="41.925" x2="35.49926875" y2="41.925" width="0.15" layer="1"/>
-<wire x1="35.49926875" y1="41.925" x2="36.47426875" y2="40.95" width="0.15" layer="1"/>
+<wire x1="32.625" y1="41.925" x2="34.89926875" y2="41.925" width="0.15" layer="1"/>
+<wire x1="34.89926875" y1="41.925" x2="35.87426875" y2="40.95" width="0.15" layer="1"/>
 <wire x1="32.1" y1="42.45" x2="32.625" y2="41.925" width="0.15" layer="1"/>
 <wire x1="40.43" y1="40.72" x2="40.43" y2="40.29" width="0.15" layer="1"/>
-<wire x1="36.47426875" y1="40.95" x2="40.2" y2="40.95" width="0.15" layer="1"/>
+<wire x1="35.87426875" y1="40.95" x2="40.2" y2="40.95" width="0.15" layer="1"/>
 <wire x1="40.2" y1="40.95" x2="40.43" y2="40.72" width="0.15" layer="1"/>
 </signal>
 <signal name="STLINK_USB_RENUMN">
 <contactref element="U1" pad="38"/>
 <contactref element="Q2" pad="1"/>
 <contactref element="R6" pad="1"/>
-<wire x1="33.2" y1="41.2" x2="35.8" y2="41.2" width="0.15" layer="1"/>
-<wire x1="35.8" y1="41.2" x2="36.9375" y2="40.05" width="0.15" layer="1"/>
+<wire x1="33.2" y1="41.2" x2="34.9" y2="41.2" width="0.15" layer="1"/>
+<wire x1="34.9" y1="41.2" x2="36.0375" y2="40.05" width="0.15" layer="1"/>
 <wire x1="36.9375" y1="40.05" x2="37.725" y2="39.275" width="0.15" layer="1"/>
 <wire x1="39.7582" y1="39.79" x2="40.43" y2="39.79" width="0.15" layer="1"/>
 <wire x1="39.2432" y1="39.275" x2="39.7582" y2="39.79" width="0.15" layer="1"/>
 <wire x1="37.725" y1="39.275" x2="39.2432" y2="39.275" width="0.15" layer="1"/>
+<wire x1="36.0375" y1="40.05" x2="36.9375" y2="40.05" width="0.15" layer="1"/>
 </signal>
 <signal name="STLINK_BOOT0">
 <contactref element="U1" pad="44"/>
@@ -2516,15 +2520,7 @@ Design rules for single and two layer boards.
 <via x="15.15" y="10.35" extent="1-16" drill="0.3"/>
 <via x="18.15" y="14.4" extent="1-16" drill="0.3"/>
 <via x="8.85" y="18.45" extent="1-16" drill="0.3"/>
-<wire x1="15.1" y1="9.45" x2="15.1" y2="10.3" width="0.15" layer="1"/>
-<wire x1="15.1" y1="10.3" x2="15.15" y2="10.35" width="0.15" layer="1"/>
-<wire x1="15.5" y1="9.45" x2="15.5" y2="10" width="0.15" layer="1"/>
-<wire x1="15.5" y1="10" x2="15.15" y2="10.35" width="0.15" layer="1"/>
 <via x="13.95" y="33.3" extent="1-16" drill="0.3"/>
-<wire x1="13.75" y1="32.4" x2="13.75" y2="33.1" width="0.15" layer="1"/>
-<wire x1="13.75" y1="33.1" x2="13.95" y2="33.3" width="0.15" layer="1"/>
-<wire x1="14.15" y1="32.4" x2="14.15" y2="33.1" width="0.15" layer="1"/>
-<wire x1="14.15" y1="33.1" x2="13.95" y2="33.3" width="0.15" layer="1"/>
 <via x="32.25" y="13.2" extent="1-16" drill="0.3"/>
 <via x="31.05" y="17.7" extent="1-16" drill="0.3"/>
 <via x="38.25" y="14.55" extent="1-16" drill="0.3"/>
@@ -2734,14 +2730,14 @@ Design rules for single and two layer boards.
 <wire x1="34.5" y1="8.6625" x2="36.45" y2="8.65" width="0.15" layer="1"/>
 <wire x1="36.45" y1="10.95" x2="36.45" y2="8.65" width="0.15" layer="1"/>
 <wire x1="36.45" y1="10.95" x2="39.08" y2="13.58" width="0.15" layer="1"/>
-<wire x1="39.08" y1="13.58" x2="40.5" y2="13.58" width="0.15" layer="1"/>
+<wire x1="39.08" y1="13.58" x2="40.2" y2="13.58" width="0.15" layer="1"/>
 <wire x1="29.3" y1="19.98" x2="32.73" y2="19.98" width="0.15" layer="1"/>
-<wire x1="35.2444" y1="22.4944" x2="40.0556" y2="22.4944" width="0.15" layer="1"/>
+<wire x1="35.2444" y1="22.4944" x2="39.9056" y2="22.4944" width="0.15" layer="1"/>
 <wire x1="32.73" y1="19.98" x2="35.2444" y2="22.4944" width="0.15" layer="1"/>
-<wire x1="40.0556" y1="22.4944" x2="40.5" y2="22.05" width="0.15" layer="1"/>
-<wire x1="40.5" y1="22.05" x2="40.5" y2="13.58" width="0.15" layer="1"/>
-<via x="40.5" y="13.58" extent="1-16" drill="0.3"/>
-<wire x1="40.5" y1="13.58" x2="45.61" y2="13.58" width="0.15" layer="16"/>
+<wire x1="39.9056" y1="22.4944" x2="40.2" y2="22.2" width="0.15" layer="1"/>
+<wire x1="40.2" y1="22.2" x2="40.2" y2="13.58" width="0.15" layer="1"/>
+<via x="40.2" y="13.58" extent="1-16" drill="0.3"/>
+<wire x1="40.2" y1="13.58" x2="45.61" y2="13.58" width="0.15" layer="16"/>
 </signal>
 <signal name="NRF_SWRST">
 <contactref element="JP12" pad="5"/>
@@ -3272,12 +3268,11 @@ Design rules for single and two layer boards.
 <signal name="USB_FS_VBUS_DET">
 <contactref element="U3" pad="4"/>
 <contactref element="R12" pad="2"/>
-<wire x1="9.9" y1="10.8375" x2="11.1" y2="9.6475" width="0.15" layer="1"/>
-<wire x1="11.1" y1="9.6475" x2="11.1" y2="8.85" width="0.15" layer="1"/>
-<wire x1="11.1" y1="8.85" x2="12.9" y2="7.05" width="0.15" layer="1"/>
+<wire x1="9.9" y1="10.039996875" x2="12.9" y2="7.05" width="0.15" layer="1"/>
 <wire x1="15.1" y1="7.3" x2="15.1" y2="7.95" width="0.15" layer="1"/>
 <wire x1="12.9" y1="7.05" x2="14.85" y2="7.05" width="0.15" layer="1"/>
 <wire x1="14.85" y1="7.05" x2="15.1" y2="7.3" width="0.15" layer="1"/>
+<wire x1="9.9" y1="10.8375" x2="9.9" y2="10.039996875" width="0.15" layer="1"/>
 </signal>
 <signal name="USB_FS_VBUS">
 <contactref element="R12" pad="1"/>
@@ -3373,10 +3368,10 @@ Design rules for single and two layer boards.
 <wire x1="5.355" y1="12.43826875" x2="6.14326875" y2="11.65" width="0.15" layer="1"/>
 <wire x1="5.355" y1="14.355" x2="5.355" y2="12.43826875" width="0.15" layer="1"/>
 <wire x1="6.14326875" y1="11.65" x2="12.5" y2="11.65" width="0.15" layer="1"/>
-<wire x1="12.5" y1="11.65" x2="12.75" y2="11.4" width="0.15" layer="1"/>
+<wire x1="12.5" y1="11.65" x2="12.9" y2="11.25" width="0.15" layer="1"/>
 <wire x1="14" y1="8.5" x2="14.65" y2="8.5" width="0.15" layer="1"/>
-<wire x1="12.75" y1="11.4" x2="12.75" y2="9.75" width="0.15" layer="1"/>
-<wire x1="12.75" y1="9.75" x2="14" y2="8.5" width="0.15" layer="1"/>
+<wire x1="12.9" y1="11.25" x2="12.9" y2="9.6" width="0.15" layer="1"/>
+<wire x1="12.9" y1="9.6" x2="14" y2="8.5" width="0.15" layer="1"/>
 <wire x1="7.355" y1="15.35" x2="6.35" y2="15.35" width="0.15" layer="1"/>
 <wire x1="6.35" y1="15.35" x2="5.355" y2="14.355" width="0.15" layer="1"/>
 </signal>
