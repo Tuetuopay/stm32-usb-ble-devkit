@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="3" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.15" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1537,8 +1537,8 @@ Design rules for single and two layer boards.
 <param name="rlMaxPadInner" value="0.2mm"/>
 <param name="rlMinPadBottom" value="0.3mm"/>
 <param name="rlMaxPadBottom" value="0.3mm"/>
-<param name="rlMinViaOuter" value="0.3mm"/>
-<param name="rlMaxViaOuter" value="0.6mm"/>
+<param name="rlMinViaOuter" value="0.15mm"/>
+<param name="rlMaxViaOuter" value="0.2mm"/>
 <param name="rlMinViaInner" value="0.2mm"/>
 <param name="rlMaxViaInner" value="0.4mm"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
@@ -3781,19 +3781,6 @@ Design rules for single and two layer boards.
 <approved hash="7,39,001401f2ff0afeec"/>
 <approved hash="7,39,c4fcf3d73bac7641"/>
 <approved hash="7,39,1cfcc4afdfac0a47"/>
-<approved hash="19,1,bbdcbae2109811a6"/>
-<approved hash="19,1,5fad5cb28ab089af"/>
-<approved hash="19,1,b9a2babc4cbe4fa0"/>
-<approved hash="19,1,b144bb35b737bd46"/>
-<approved hash="19,1,364428ba6ab87446"/>
-<approved hash="19,1,b83bb540bdc2b0b9"/>
-<approved hash="19,1,32f00b023b0002f2"/>
-<approved hash="19,1,06b30505110712b1"/>
-<approved hash="19,1,3ebd3db92dbb2ebf"/>
-<approved hash="19,1,183e0622d220cc3c"/>
-<approved hash="19,1,b7b1b6a280a081b3"/>
-<approved hash="19,1,8fca8c05820781c8"/>
-<approved hash="19,1,3069335972db71eb"/>
 <approved hash="7,39,c3d4df2d35c271f3"/>
 <approved hash="7,39,bd53c091126da34c"/>
 <approved hash="7,39,110813cbdf58cd22"/>
@@ -3829,6 +3816,19 @@ Design rules for single and two layer boards.
 <approved hash="7,39,8243d8bd87e06a76"/>
 <approved hash="7,39,040407c76d3f6efc"/>
 <approved hash="7,39,3d6f9f2292216e43"/>
+<approved hash="19,1,5d5b5cf2636c62c5"/>
+<approved hash="19,1,89229415948b89bc"/>
+<approved hash="19,1,25cd24dd11431053"/>
+<approved hash="19,1,d02fd2e17a7f78b1"/>
+<approved hash="19,1,d38fed1758896611"/>
+<approved hash="19,1,108f121a46844411"/>
+<approved hash="19,1,488c766866f65812"/>
+<approved hash="19,1,188e1f986b066c10"/>
+<approved hash="19,1,a7cea6d76f496e50"/>
+<approved hash="19,1,576057db624562fe"/>
+<approved hash="19,1,3c24410bcb73b65c"/>
+<approved hash="19,1,f7d2f0d679487e4c"/>
+<approved hash="19,1,1bea1a92640c6574"/>
 </errors>
 </board>
 </drawing>
