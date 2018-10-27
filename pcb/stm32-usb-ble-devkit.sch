@@ -6620,8 +6620,8 @@ Source: www.kingbright.com</description>
 <part name="R29" library="tuetuopay" deviceset="R" device="R0603" value="500"/>
 <part name="+3V23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U6" library="tuetuopay" deviceset="LDO" device="AMS1117" value="AMS1117-3.3"/>
-<part name="C18" library="tuetuopay" deviceset="C" device="0805" value="22u"/>
-<part name="C19" library="tuetuopay" deviceset="C" device="0805" value="22u"/>
+<part name="C18" library="tuetuopay" deviceset="C" device="0603" value="22u"/>
+<part name="C19" library="tuetuopay" deviceset="C" device="0603" value="22u"/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -6631,8 +6631,8 @@ Source: www.kingbright.com</description>
 <part name="JP12" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 <part name="JP13" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 <part name="TP13" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
-<part name="C20" library="tuetuopay" deviceset="C" device="0805" value="100n"/>
-<part name="C21" library="tuetuopay" deviceset="C" device="0805" value="100n"/>
+<part name="C20" library="tuetuopay" deviceset="C" device="0603" value="100n"/>
+<part name="C21" library="tuetuopay" deviceset="C" device="0603" value="100n"/>
 <part name="R17" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
 <part name="R19" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
 <part name="R21" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
