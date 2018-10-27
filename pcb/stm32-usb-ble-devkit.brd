@@ -1110,16 +1110,16 @@
 <rectangle x1="-3.55" y1="5.5" x2="-1.95" y2="5.9" layer="29" rot="R270"/>
 <rectangle x1="-4.05" y1="5.5" x2="-2.45" y2="5.9" layer="29" rot="R270"/>
 <rectangle x1="-4.55" y1="5.5" x2="-2.95" y2="5.9" layer="29" rot="R270"/>
-<wire x1="-5.5" y1="4.95" x2="-4.95" y2="5.5" width="0.127" layer="21"/>
-<wire x1="-4.95" y1="5.5" x2="4.95" y2="5.5" width="0.127" layer="21"/>
-<wire x1="4.95" y1="5.5" x2="5.5" y2="4.95" width="0.127" layer="21"/>
-<wire x1="5.5" y1="4.95" x2="5.5" y2="-4.95" width="0.127" layer="21"/>
-<wire x1="5.5" y1="-4.95" x2="4.95" y2="-5.5" width="0.127" layer="21"/>
-<wire x1="4.95" y1="-5.5" x2="-4.95" y2="-5.5" width="0.127" layer="21"/>
-<wire x1="-4.95" y1="-5.5" x2="-5.5" y2="-4.95" width="0.127" layer="21"/>
-<wire x1="-5.5" y1="-4.95" x2="-5.5" y2="4.95" width="0.127" layer="21"/>
+<wire x1="-5" y1="4.45" x2="-4.45" y2="5" width="0.127" layer="21"/>
+<wire x1="-4.45" y1="5" x2="4.45" y2="5" width="0.127" layer="21"/>
+<wire x1="4.45" y1="5" x2="5" y2="4.45" width="0.127" layer="21"/>
+<wire x1="5" y1="4.45" x2="5" y2="-4.45" width="0.127" layer="21"/>
+<wire x1="5" y1="-4.45" x2="4.45" y2="-5" width="0.127" layer="21"/>
+<wire x1="4.45" y1="-5" x2="-4.45" y2="-5" width="0.127" layer="21"/>
+<wire x1="-4.45" y1="-5" x2="-5" y2="-4.45" width="0.127" layer="21"/>
+<wire x1="-5" y1="-4.45" x2="-5" y2="4.45" width="0.127" layer="21"/>
 <circle x="-3.75" y="3.75" radius="0.25" width="0.127" layer="21"/>
-<circle x="-6" y="6" radius="0.25" width="0.127" layer="21"/>
+<circle x="-5.5" y="5.5" radius="0.25" width="0.127" layer="21"/>
 <text x="-5" y="7.5" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="X2QFN-0.4">
