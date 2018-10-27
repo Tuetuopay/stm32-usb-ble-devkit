@@ -723,18 +723,18 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <wire x1="0.9" y1="0.9" x2="-0.9" y2="0.9" width="0.127" layer="21"/>
 </package>
 <package name="USB-C-FEMALE">
-<smd name="B7" x="-0.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A6" x="-0.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="B8" x="-1.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A5" x="-1.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A7" x="0.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="B6" x="0.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A8" x="1.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="B5" x="1.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="A9" x="2.4" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<smd name="A4" x="-2.4" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<smd name="A12" x="3.2" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<smd name="A1" x="-3.2" y="7.355" dx="0.6" dy="1.15" layer="1"/>
+<smd name="B7" x="-0.75" y="7.73" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A6" x="-0.25" y="7.73" dx="0.3" dy="1.15" layer="1"/>
+<smd name="B8" x="-1.75" y="7.73" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A5" x="-1.25" y="7.73" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A7" x="0.25" y="7.73" dx="0.3" dy="1.15" layer="1"/>
+<smd name="B6" x="0.75" y="7.73" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A8" x="1.25" y="7.73" dx="0.3" dy="1.15" layer="1"/>
+<smd name="B5" x="1.75" y="7.73" dx="0.3" dy="1.15" layer="1"/>
+<smd name="A9" x="2.4" y="7.73" dx="0.6" dy="1.15" layer="1"/>
+<smd name="A4" x="-2.4" y="7.73" dx="0.6" dy="1.15" layer="1"/>
+<smd name="A12" x="3.2" y="7.73" dx="0.6" dy="1.15" layer="1"/>
+<smd name="A1" x="-3.2" y="7.73" dx="0.6" dy="1.15" layer="1"/>
 <hole x="2.89" y="6.28" drill="0.65"/>
 <hole x="-2.89" y="6.28" drill="0.65"/>
 <pad name="G3" x="-4.32" y="2.6" drill="0.6" shape="long" rot="R90"/>
