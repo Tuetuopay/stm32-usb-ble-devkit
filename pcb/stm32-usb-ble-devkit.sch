@@ -7293,7 +7293,6 @@ UART switch</text>
 <instance part="TP3" gate="G$1" x="17.78" y="25.4" rot="R270"/>
 <instance part="GND17" gate="1" x="45.72" y="55.88"/>
 <instance part="R11" gate="G$1" x="45.72" y="66.04" rot="R90"/>
-<instance part="GND18" gate="1" x="40.64" y="73.66"/>
 <instance part="TP4" gate="G$1" x="144.78" y="50.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="156.21" y="52.324" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="147.32" y="52.07" size="1.778" layer="97" rot="R90"/>
@@ -7419,17 +7418,6 @@ UART switch</text>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="45.72" y1="60.96" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND18" gate="1" pin="GND"/>
-<pinref part="U2" gate="G$1" pin="VCAP2"/>
-<wire x1="40.64" y1="76.2" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="78.74" x2="45.72" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VCAP1"/>
-<wire x1="45.72" y1="78.74" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="78.74" x2="45.72" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
-<junction x="45.72" y="78.74"/>
 </segment>
 <segment>
 <pinref part="C11" gate="&gt;NAME" pin="1"/>

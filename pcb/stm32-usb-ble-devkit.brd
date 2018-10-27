@@ -2415,7 +2415,6 @@ Design rules for single and two layer boards.
 <wire x1="21.3" y1="26.4" x2="21.6" y2="26.4" width="0.4" layer="16"/>
 </signal>
 <signal name="GND">
-<contactref element="U1" pad="47"/>
 <contactref element="U1" pad="35"/>
 <contactref element="U1" pad="23"/>
 <contactref element="U1" pad="8"/>
@@ -2442,8 +2441,6 @@ Design rules for single and two layer boards.
 <contactref element="C9" pad="1"/>
 <contactref element="C10" pad="1"/>
 <contactref element="R11" pad="1"/>
-<contactref element="U2" pad="47"/>
-<contactref element="U2" pad="31"/>
 <contactref element="C11" pad="1"/>
 <contactref element="C12" pad="1"/>
 <contactref element="C13" pad="1"/>
