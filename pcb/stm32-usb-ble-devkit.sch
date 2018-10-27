@@ -7361,28 +7361,28 @@ UART switch</text>
 <instance part="+3V23" gate="G$1" x="215.9" y="73.66"/>
 <instance part="JP9" gate="A" x="149.86" y="22.86"/>
 <instance part="JP10" gate="A" x="241.3" y="88.9"/>
-<instance part="R17" gate="G$1" x="121.92" y="152.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="120.142" y="151.13" size="1.778" layer="95" rot="R90" align="bottom-right"/>
-<attribute name="VALUE" x="120.142" y="153.67" size="1.778" layer="96" rot="R90"/>
+<instance part="R17" gate="G$1" x="124.46" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="122.682" y="151.13" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="122.682" y="153.67" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R19" gate="G$1" x="127" y="152.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="125.222" y="151.13" size="1.778" layer="95" rot="R90" align="bottom-right"/>
-<attribute name="VALUE" x="125.222" y="153.67" size="1.778" layer="96" rot="R90"/>
+<instance part="R19" gate="G$1" x="129.54" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="127.762" y="151.13" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="127.762" y="153.67" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R21" gate="G$1" x="119.38" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="117.602" y="125.73" size="1.778" layer="95" rot="R90" align="bottom-right"/>
-<attribute name="VALUE" x="117.602" y="128.27" size="1.778" layer="96" rot="R90"/>
+<instance part="R21" gate="G$1" x="121.92" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.142" y="125.73" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="120.142" y="128.27" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R30" gate="G$1" x="124.46" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="122.682" y="125.73" size="1.778" layer="95" rot="R90" align="bottom-right"/>
-<attribute name="VALUE" x="122.682" y="128.27" size="1.778" layer="96" rot="R90"/>
+<instance part="R30" gate="G$1" x="127" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="125.222" y="125.73" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="125.222" y="128.27" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R31" gate="G$1" x="129.54" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="127.762" y="125.73" size="1.778" layer="95" rot="R90" align="bottom-right"/>
-<attribute name="VALUE" x="127.762" y="128.27" size="1.778" layer="96" rot="R90"/>
+<instance part="R31" gate="G$1" x="132.08" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.302" y="125.73" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="130.302" y="128.27" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V19" gate="G$1" x="124.46" y="165.1"/>
-<instance part="GND28" gate="1" x="124.46" y="114.3"/>
+<instance part="+3V19" gate="G$1" x="127" y="165.1"/>
+<instance part="GND28" gate="1" x="127" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -7450,16 +7450,16 @@ UART switch</text>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="121.92" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="121.92" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="119.38" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="127" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="119.38" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="121.92" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
-<junction x="124.46" y="119.38"/>
+<wire x1="127" y1="121.92" x2="127" y2="119.38" width="0.1524" layer="91"/>
+<junction x="127" y="119.38"/>
 <pinref part="GND28" gate="1" pin="GND"/>
-<wire x1="124.46" y1="116.84" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="127" y1="116.84" x2="127" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -7550,14 +7550,14 @@ UART switch</text>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="157.48" x2="121.92" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="160.02" x2="124.46" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="157.48" x2="124.46" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="160.02" x2="127" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="127" y1="160.02" x2="127" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="127" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="160.02" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="+3V19" gate="G$1" pin="+3V3"/>
-<wire x1="124.46" y1="162.56" x2="124.46" y2="160.02" width="0.1524" layer="91"/>
-<junction x="124.46" y="160.02"/>
+<wire x1="127" y1="162.56" x2="127" y2="160.02" width="0.1524" layer="91"/>
+<junction x="127" y="160.02"/>
 </segment>
 </net>
 <net name="STM_OSC_IN" class="0">
@@ -7664,12 +7664,12 @@ UART switch</text>
 <net name="SPI_SCK" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA5"/>
-<wire x1="93.98" y1="139.7" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
-<label x="132.08" y="139.7" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
+<label x="134.62" y="139.7" size="1.27" layer="95" xref="yes"/>
 <pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="132.08" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
-<junction x="129.54" y="139.7"/>
+<wire x1="132.08" y1="139.7" x2="134.62" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="132.08" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
+<junction x="132.08" y="139.7"/>
 </segment>
 <segment>
 <label x="226.06" y="137.16" size="1.27" layer="95" xref="yes"/>
@@ -7680,12 +7680,12 @@ UART switch</text>
 <net name="SPI_MISO" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA6"/>
-<wire x1="93.98" y1="137.16" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
-<label x="132.08" y="137.16" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="137.16" x2="127" y2="137.16" width="0.1524" layer="91"/>
+<label x="134.62" y="137.16" size="1.27" layer="95" xref="yes"/>
 <pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="137.16" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="132.08" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
-<junction x="124.46" y="137.16"/>
+<wire x1="127" y1="137.16" x2="134.62" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="127" y1="132.08" x2="127" y2="137.16" width="0.1524" layer="91"/>
+<junction x="127" y="137.16"/>
 </segment>
 <segment>
 <label x="226.06" y="134.62" size="1.27" layer="95" xref="yes"/>
@@ -7696,12 +7696,12 @@ UART switch</text>
 <net name="SPI_MOSI" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA7"/>
-<wire x1="93.98" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
-<label x="132.08" y="134.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="134.62" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
+<label x="134.62" y="134.62" size="1.27" layer="95" xref="yes"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="134.62" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="132.08" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
-<junction x="119.38" y="134.62"/>
+<wire x1="121.92" y1="134.62" x2="134.62" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="132.08" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
+<junction x="121.92" y="134.62"/>
 </segment>
 <segment>
 <label x="226.06" y="132.08" size="1.27" layer="95" xref="yes"/>
@@ -7712,12 +7712,12 @@ UART switch</text>
 <net name="SPI_IRQ" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA4"/>
-<wire x1="93.98" y1="142.24" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
-<label x="132.08" y="142.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="142.24" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
+<label x="134.62" y="142.24" size="1.27" layer="95" xref="yes"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="142.24" x2="132.08" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="147.32" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
-<junction x="121.92" y="142.24"/>
+<wire x1="124.46" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="147.32" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
+<junction x="124.46" y="142.24"/>
 </segment>
 <segment>
 <label x="226.06" y="139.7" size="1.27" layer="95" xref="yes"/>
@@ -8180,17 +8180,45 @@ UART switch</text>
 <net name="SPI_CS" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA3"/>
-<wire x1="93.98" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
-<label x="132.08" y="144.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="144.78" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
+<label x="134.62" y="144.78" size="1.27" layer="95" xref="yes"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="127" y1="144.78" x2="132.08" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="127" y1="147.32" x2="127" y2="144.78" width="0.1524" layer="91"/>
-<junction x="127" y="144.78"/>
+<wire x1="129.54" y1="144.78" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="147.32" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
+<junction x="129.54" y="144.78"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.09"/>
 <wire x1="220.98" y1="129.54" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
 <label x="226.06" y="129.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USB_FS_VBUS" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PA9"/>
+<wire x1="93.98" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
+<label x="99.06" y="129.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USB_HS_VBUS" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PB13"/>
+<wire x1="93.98" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+<label x="99.06" y="76.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USB_FS_ON" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PA8"/>
+<wire x1="93.98" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
+<label x="99.06" y="132.08" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USB_HS_ON" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PB11"/>
+<wire x1="93.98" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
+<label x="99.06" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -8635,24 +8663,6 @@ so feed it power when done.</text>
 <junction x="38.1" y="35.56"/>
 </segment>
 </net>
-<net name="USB_FS_ID" class="0">
-<segment>
-<pinref part="Q6" gate="G$1" pin="G"/>
-<wire x1="185.42" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="137.16" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="129.54" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
-<label x="172.72" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="USB_HS_ID" class="0">
-<segment>
-<pinref part="Q8" gate="G$1" pin="G"/>
-<wire x1="185.42" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="88.9" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
-<label x="172.72" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="USB_FS_HS_VBUS" class="0">
 <segment>
 <pinref part="Q4" gate="G$1" pin="S"/>
@@ -8675,6 +8685,24 @@ so feed it power when done.</text>
 <pinref part="+3V24" gate="G$1" pin="+3V3"/>
 <wire x1="83.82" y1="45.72" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
 <junction x="83.82" y="35.56"/>
+</segment>
+</net>
+<net name="USB_FS_ON" class="0">
+<segment>
+<pinref part="Q6" gate="G$1" pin="G"/>
+<wire x1="185.42" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="137.16" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="129.54" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
+<label x="172.72" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="USB_HS_ON" class="0">
+<segment>
+<pinref part="Q8" gate="G$1" pin="G"/>
+<wire x1="185.42" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="88.9" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
+<label x="172.72" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

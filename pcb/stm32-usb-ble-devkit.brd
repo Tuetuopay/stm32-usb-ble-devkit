@@ -2863,9 +2863,6 @@ Design rules for single and two layer boards.
 <contactref element="U2" pad="43"/>
 <contactref element="U3" pad="9"/>
 <contactref element="R14" pad="2"/>
-<contactref element="Q6" pad="1"/>
-<wire x1="16.4" y1="11.05" x2="16.55" y2="11.05" width="0.15" layer="1"/>
-<wire x1="15.575" y1="11.275" x2="15.8" y2="11.05" width="0.15" layer="1"/>
 <wire x1="14.1" y1="14.7375" x2="14.95" y2="15.6" width="0.15" layer="1"/>
 <wire x1="17.85" y1="15.6" x2="19.05" y2="16.8" width="0.15" layer="1"/>
 <wire x1="19.05" y1="16.8" x2="19.05" y2="19.2" width="0.15" layer="1"/>
@@ -2911,13 +2908,8 @@ Design rules for single and two layer boards.
 <contactref element="U2" pad="33"/>
 <contactref element="U4" pad="9"/>
 <contactref element="R15" pad="2"/>
-<contactref element="Q8" pad="1"/>
-<wire x1="17.55" y1="31.9" x2="16.6875" y2="31.05" width="0.15" layer="1"/>
-<wire x1="17.55" y1="33.5182" x2="17.55" y2="31.9" width="0.15" layer="1"/>
 <wire x1="14.55" y1="32.4" x2="15.35" y2="32.4" width="0.15" layer="1"/>
 <wire x1="15.35" y1="32.4" x2="16.6875" y2="31.05" width="0.15" layer="1"/>
-<wire x1="14.9" y1="34.75" x2="16.3182" y2="34.75" width="0.15" layer="1"/>
-<wire x1="16.3182" y1="34.75" x2="17.55" y2="33.5182" width="0.15" layer="1"/>
 <wire x1="16.6875" y1="31.05" x2="15.75" y2="30.1" width="0.15" layer="1"/>
 <wire x1="16.62" y1="24.48" x2="17.9" y2="24.48" width="0.15" layer="1"/>
 <wire x1="15.75" y1="30.1" x2="15.75" y2="25.35" width="0.15" layer="1"/>
@@ -3072,21 +3064,23 @@ Design rules for single and two layer boards.
 <signal name="STM_LED1">
 <contactref element="U2" pad="38"/>
 <contactref element="R23" pad="1"/>
-<wire x1="17.9" y1="21.98" x2="15.62" y2="21.98" width="0.15" layer="1"/>
-<wire x1="15.62" y1="21.98" x2="11.8125" y2="25.8" width="0.15" layer="1"/>
+<wire x1="17.9" y1="21.98" x2="16.52" y2="21.98" width="0.15" layer="1"/>
+<wire x1="16.52" y1="21.98" x2="12.7125" y2="25.8" width="0.15" layer="1"/>
+<wire x1="12.7125" y1="25.8" x2="11.8125" y2="25.8" width="0.15" layer="1"/>
 </signal>
 <signal name="STM_LED2">
 <contactref element="U2" pad="39"/>
 <contactref element="R24" pad="1"/>
-<wire x1="8.8125" y1="24.44" x2="12.01" y2="24.44" width="0.15" layer="1"/>
-<wire x1="14.97" y1="21.48" x2="17.9" y2="21.48" width="0.15" layer="1"/>
-<wire x1="12.01" y1="24.44" x2="14.97" y2="21.48" width="0.15" layer="1"/>
+<wire x1="8.8125" y1="24.44" x2="13.51" y2="24.44" width="0.15" layer="1"/>
+<wire x1="16.47" y1="21.48" x2="17.9" y2="21.48" width="0.15" layer="1"/>
+<wire x1="13.51" y1="24.44" x2="16.47" y2="21.48" width="0.15" layer="1"/>
 </signal>
 <signal name="STM_LED3">
 <contactref element="U2" pad="40"/>
 <contactref element="R25" pad="1"/>
-<wire x1="17.9" y1="20.98" x2="13.92" y2="20.98" width="0.15" layer="1"/>
-<wire x1="13.92" y1="20.98" x2="11.8125" y2="23.1" width="0.15" layer="1"/>
+<wire x1="17.9" y1="20.98" x2="16.46823125" y2="20.98" width="0.15" layer="1"/>
+<wire x1="16.46823125" y1="20.98" x2="14.36073125" y2="23.1" width="0.15" layer="1"/>
+<wire x1="14.36073125" y1="23.1" x2="11.8125" y2="23.1" width="0.15" layer="1"/>
 </signal>
 <signal name="STM_DBG_TP_0">
 <contactref element="TP4" pad="TP"/>
@@ -3311,6 +3305,19 @@ Design rules for single and two layer boards.
 <wire x1="12.12380625" y1="42.45" x2="14.11" y2="42.45" width="0.4" layer="1"/>
 <wire x1="7.73" y1="19.5" x2="9" y2="19.5" width="0.4" layer="1"/>
 <wire x1="8.925" y1="14.4" x2="8.175" y2="14.4" width="0.4" layer="16"/>
+<contactref element="U2" pad="42"/>
+<wire x1="17.9" y1="19.98" x2="17.93" y2="19.95" width="0.15" layer="1"/>
+<wire x1="17.93" y1="19.95" x2="18.75" y2="19.95" width="0.15" layer="1"/>
+<wire x1="18.75" y1="19.95" x2="19.35" y2="19.35" width="0.15" layer="1"/>
+<wire x1="19.35" y1="16.67573125" x2="18.137134375" y2="15.462865625" width="0.15" layer="1"/>
+<wire x1="19.35" y1="19.35" x2="19.35" y2="16.67573125" width="0.15" layer="1"/>
+<wire x1="18.137134375" y1="15.462865625" x2="18.137134375" y2="13.187134375" width="0.15" layer="1"/>
+<wire x1="18.137134375" y1="13.187134375" x2="17.25" y2="12.3" width="0.15" layer="1"/>
+<wire x1="17.25" y1="12.3" x2="16.53639375" y2="12.3" width="0.15" layer="1"/>
+<via x="16.53639375" y="12.3" extent="1-16" drill="0.3" diameter="0.6"/>
+<wire x1="16.53639375" y1="12.3" x2="14.35" y2="12.3" width="0.15" layer="16"/>
+<via x="14.35" y="12.3" extent="1-16" drill="0.3" diameter="0.6"/>
+<wire x1="7.95" y1="19.5" x2="9" y2="19.5" width="0.4" layer="16"/>
 </signal>
 <signal name="USB_HS_VBUS_DET">
 <contactref element="U4" pad="4"/>
@@ -3348,6 +3355,15 @@ Design rules for single and two layer boards.
 <wire x1="7.73" y1="30.9" x2="8.325" y2="30.9" width="0.4" layer="1"/>
 <wire x1="7.73" y1="35.7" x2="8.85" y2="35.7" width="0.4" layer="1"/>
 <wire x1="11.4" y1="32.3625" x2="11.4" y2="32.4" width="0.15" layer="1"/>
+<contactref element="U2" pad="34"/>
+<wire x1="11.4" y1="32.4" x2="11.4" y2="35.7" width="0.15" layer="1"/>
+<wire x1="17.9" y1="23.98" x2="16.69573125" y2="23.98" width="0.15" layer="1"/>
+<wire x1="12.6" y1="28.07573125" x2="12.6" y2="29.4" width="0.15" layer="1"/>
+<via x="12.6" y="29.4" extent="1-16" drill="0.3" diameter="0.6"/>
+<wire x1="12.6" y1="29.4" x2="12.6" y2="31.2" width="0.15" layer="16"/>
+<wire x1="12.6" y1="31.2" x2="11.4" y2="32.4" width="0.15" layer="16"/>
+<via x="11.4" y="32.4" extent="1-16" drill="0.3" diameter="0.6"/>
+<wire x1="16.69573125" y1="23.98" x2="12.6" y2="28.07573125" width="0.15" layer="1"/>
 </signal>
 <signal name="USB_FS_CC1">
 <contactref element="U3" pad="1"/>
@@ -3518,6 +3534,32 @@ Design rules for single and two layer boards.
 <wire x1="64.1625" y1="17.25" x2="63.85" y2="17.25" width="0.15" layer="1"/>
 <wire x1="63.85" y1="17.25" x2="62.65" y2="16.05" width="0.15" layer="1"/>
 </signal>
+<signal name="USB_FS_ON">
+<contactref element="U2" pad="41"/>
+<contactref element="Q6" pad="1"/>
+<wire x1="18.79426875" y1="20.48" x2="19.65" y2="19.62426875" width="0.15" layer="1"/>
+<wire x1="19.65" y1="16.4982" x2="18.43714375" y2="15.28534375" width="0.15" layer="1"/>
+<wire x1="18.43714375" y1="15.28534375" x2="18.43714375" y2="13.8" width="0.15" layer="1"/>
+<wire x1="19.65" y1="19.62426875" x2="19.65" y2="16.4982" width="0.15" layer="1"/>
+<wire x1="18.43714375" y1="13.8" x2="18.43714375" y2="13.8" width="0.15" layer="1"/>
+<wire x1="18.43714375" y1="13.03714375" x2="18.43714375" y2="13.8" width="0.15" layer="1"/>
+<wire x1="16.55" y1="11.35" x2="16.75" y2="11.35" width="0.15" layer="1"/>
+<wire x1="16.75" y1="11.35" x2="18.43714375" y2="13.03714375" width="0.15" layer="1"/>
+<wire x1="17.9" y1="20.48" x2="18.79426875" y2="20.48" width="0.15" layer="1"/>
+</signal>
+<signal name="USB_HS_ON">
+<contactref element="U2" pad="30"/>
+<contactref element="Q8" pad="1"/>
+<wire x1="20.85" y1="26.43" x2="20.85" y2="27.75" width="0.15" layer="1"/>
+<wire x1="20.85" y1="27.75" x2="19.2" y2="29.4" width="0.15" layer="1"/>
+<wire x1="19.2" y1="31.65" x2="18.75" y2="32.1" width="0.15" layer="1"/>
+<wire x1="17.85" y1="32.1" x2="17.55" y2="32.4" width="0.15" layer="1"/>
+<wire x1="16.4" y1="34.75" x2="14.9" y2="34.75" width="0.15" layer="1"/>
+<wire x1="19.2" y1="29.4" x2="19.2" y2="31.65" width="0.15" layer="1"/>
+<wire x1="18.75" y1="32.1" x2="17.85" y2="32.1" width="0.15" layer="1"/>
+<wire x1="17.55" y1="32.4" x2="17.55" y2="33.6" width="0.15" layer="1"/>
+<wire x1="17.55" y1="33.6" x2="16.4" y2="34.75" width="0.15" layer="1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -3533,16 +3575,10 @@ Design rules for single and two layer boards.
 <approved hash="4,1,31a43059702171dc"/>
 <approved hash="4,1,a424a8cfa8b7a45c"/>
 <approved hash="4,1,1824180ba673a65c"/>
-<approved hash="4,1,34d2e232338e2446"/>
-<approved hash="4,1,f04a0b1f7cee4582"/>
 <approved hash="4,1,252429f36d0b61dc"/>
 <approved hash="4,1,e427e8f0c288ce5f"/>
 <approved hash="4,1,3c2430c970b17c5c"/>
 <approved hash="4,1,256459031dfb619c"/>
-<approved hash="4,1,3706e022e0c0245e"/>
-<approved hash="4,1,9ff4927dec7124b7"/>
-<approved hash="4,1,2724db2dabd09234"/>
-<approved hash="4,1,03c7fff546ea7101"/>
 <approved hash="4,1,e4679800b278ce1f"/>
 <approved hash="4,1,1c64603bde43a21c"/>
 <approved hash="4,1,2d6051385ec02298"/>
@@ -3552,8 +3588,6 @@ Design rules for single and two layer boards.
 <approved hash="4,1,28a429636d9b6c5c"/>
 <approved hash="4,1,a464d83fd847a41c"/>
 <approved hash="4,1,3c64403900417c1c"/>
-<approved hash="4,1,9e708c093d1f257b"/>
-<approved hash="4,1,d0312cbb95d8a2bf"/>
 <approved hash="4,1,e027e030ca48ca5f"/>
 <approved hash="4,1,2920290826f026d8"/>
 <approved hash="4,1,2124213365cb65dc"/>
@@ -3812,9 +3846,10 @@ Design rules for single and two layer boards.
 <approved hash="19,1,188e1f986b066c10"/>
 <approved hash="19,1,a7cea6d76f496e50"/>
 <approved hash="19,1,576057db624562fe"/>
-<approved hash="19,1,3c24410bcb73b65c"/>
 <approved hash="19,1,f7d2f0d679487e4c"/>
 <approved hash="19,1,1bea1a92640c6574"/>
+<approved hash="19,1,3b2044ca20545fbe"/>
+<approved hash="19,1,a8bba9c1095f0825"/>
 </errors>
 </board>
 </drawing>
