@@ -75,21 +75,21 @@
 </layers>
 <board>
 <plain>
-<wire x1="90" y1="6" x2="90" y2="44" width="0" layer="20"/>
-<wire x1="90" y1="44" x2="84" y2="50" width="0" layer="20" curve="90"/>
-<wire x1="84" y1="50" x2="6" y2="50" width="0" layer="20"/>
-<wire x1="6" y1="50" x2="0" y2="44" width="0" layer="20" curve="90"/>
-<wire x1="0" y1="44" x2="0" y2="6" width="0" layer="20"/>
-<wire x1="0" y1="6" x2="6" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="6" y1="0" x2="84" y2="0" width="0" layer="20"/>
-<wire x1="84" y1="0" x2="90" y2="6" width="0" layer="20" curve="90"/>
-<hole x="6" y="44" drill="6"/>
-<hole x="6" y="6" drill="6"/>
-<hole x="84" y="6" drill="6"/>
-<hole x="84" y="44" drill="6"/>
-<circle x="84" y="44" radius="5" width="0.1524" layer="51"/>
-<circle x="84" y="6" radius="5" width="0.1524" layer="51"/>
-<circle x="6" y="6" radius="5" width="0.1524" layer="51"/>
+<wire x1="4.5" y1="0" x2="85.5" y2="0" width="0" layer="20"/>
+<wire x1="85.5" y1="0" x2="90" y2="4.5" width="0" layer="20" curve="90"/>
+<wire x1="90" y1="4.5" x2="90" y2="45.5" width="0" layer="20"/>
+<wire x1="90" y1="45.5" x2="85.5" y2="50" width="0" layer="20" curve="90"/>
+<wire x1="85.5" y1="50" x2="4.5" y2="50" width="0" layer="20"/>
+<wire x1="4.5" y1="50" x2="0" y2="45.5" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="45.5" x2="0" y2="4.5" width="0" layer="20"/>
+<wire x1="0" y1="4.5" x2="4.5" y2="0" width="0" layer="20" curve="90"/>
+<hole x="4.5" y="45.5" drill="4"/>
+<hole x="4.5" y="4.5" drill="4"/>
+<hole x="85.5" y="4.5" drill="4"/>
+<hole x="85.5" y="45.5" drill="4"/>
+<circle x="85.5" y="45.5" radius="3.5" width="0.1524" layer="51"/>
+<circle x="85.5" y="4.5" radius="3.5" width="0.1524" layer="51"/>
+<circle x="4.5" y="4.5" radius="3.5" width="0.1524" layer="51"/>
 <text x="52.65" y="20.85" size="0.9" layer="51">SWDIO</text>
 <text x="52.65" y="18.3" size="0.9" layer="51">SWCLK</text>
 <text x="52.65" y="15.75" size="0.9" layer="51">SWO</text>
@@ -727,23 +727,19 @@
 <text x="16.2" y="40.35" size="0.9" layer="51" font="vector" rot="R270">+5V</text>
 <text x="66.45" y="0.45" size="0.9" layer="51" font="vector">P0.13</text>
 <text x="74.4" y="0.45" size="0.9" layer="51" font="vector">P0.16</text>
-<circle x="6" y="44" radius="5" width="0.15" layer="51"/>
-<circle x="6" y="6" radius="5" width="0.1524" layer="52"/>
-<circle x="84" y="6" radius="5" width="0.1524" layer="52"/>
-<circle x="84" y="44" radius="5" width="0.1524" layer="52"/>
-<circle x="6" y="44" radius="5" width="0.15" layer="52"/>
-<wire x1="7.8" y1="27.9" x2="8.1" y2="27.9" width="0.15" layer="41"/>
-<wire x1="1.8" y1="27.6" x2="2.1" y2="27.6" width="0.15" layer="41"/>
-<wire x1="1.8" y1="22.65" x2="2.1" y2="22.65" width="0.15" layer="41"/>
-<wire x1="10.65" y1="22.5" x2="11.25" y2="22.5" width="0.15" layer="41"/>
-<circle x="6" y="6" radius="5" width="0.1524" layer="41"/>
-<circle x="6" y="6" radius="5" width="0.1524" layer="42"/>
-<circle x="6" y="44" radius="5" width="0.15" layer="42"/>
-<circle x="6" y="44" radius="5" width="0.15" layer="41"/>
-<circle x="84" y="44" radius="5" width="0.1524" layer="42"/>
-<circle x="84" y="44" radius="5" width="0.1524" layer="41"/>
-<circle x="84" y="6" radius="5" width="0.1524" layer="42"/>
-<circle x="84" y="6" radius="5" width="0.1524" layer="41"/>
+<circle x="4.5" y="45.5" radius="3.5" width="0.15" layer="51"/>
+<circle x="4.5" y="4.5" radius="3.5" width="0.1524" layer="52"/>
+<circle x="85.5" y="4.5" radius="3.5" width="0.1524" layer="52"/>
+<circle x="85.5" y="45.5" radius="3.5" width="0.1524" layer="52"/>
+<circle x="4.5" y="45.5" radius="3.5" width="0.15" layer="52"/>
+<circle x="4.5" y="4.5" radius="3.5" width="0.1524" layer="41"/>
+<circle x="4.5" y="4.5" radius="3.5" width="0.1524" layer="42"/>
+<circle x="4.5" y="45.5" radius="3.5" width="0.15" layer="42"/>
+<circle x="4.5" y="45.5" radius="3.5" width="0.15" layer="41"/>
+<circle x="85.5" y="45.5" radius="3.5" width="0.1524" layer="42"/>
+<circle x="85.5" y="45.5" radius="3.5" width="0.1524" layer="41"/>
+<circle x="85.5" y="4.5" radius="3.5" width="0.1524" layer="42"/>
+<circle x="85.5" y="4.5" radius="3.5" width="0.1524" layer="41"/>
 <rectangle x1="81.45" y1="12.9" x2="89.85" y2="37.2" layer="41"/>
 <rectangle x1="81.45" y1="12.9" x2="89.85" y2="37.2" layer="42"/>
 <wire x1="74.1" y1="7.05" x2="74.4" y2="7.05" width="0.15" layer="41"/>
