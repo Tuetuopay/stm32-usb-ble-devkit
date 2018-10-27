@@ -833,6 +833,20 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <rectangle x1="-0.5" y1="-3.15" x2="0.5" y2="-1.65" layer="51"/>
 <rectangle x1="1.8" y1="-3.15" x2="2.8" y2="-1.65" layer="51"/>
 </package>
+<package name="SOD123">
+<description>&lt;b&gt;Diode&lt;/b&gt;</description>
+<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.254" layer="51"/>
+<smd name="C" x="-1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+<smd name="A" x="1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
+<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
+<rectangle x1="-1.05" y1="-0.65" x2="-0.15" y2="0.7" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F103-48">
@@ -1104,20 +1118,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <text x="2.54" y="1.905" size="1.651" layer="95" rot="MR180" align="top-left">&gt;NAME</text>
 <text x="2.54" y="0.635" size="1.651" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
-<symbol name="DIODE">
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<pin name="A" x="-2.54" y="0" visible="off" length="point" rot="R90"/>
-<pin name="C" x="2.54" y="0" visible="off" length="point" rot="R90"/>
-<text x="2.54" y="0.635" size="1.651" layer="95" rot="MR180" align="top-left">&gt;NAME</text>
-<text x="2.54" y="-0.635" size="1.651" layer="96" align="top-left">&gt;VALUE</text>
-</symbol>
 <symbol name="HOLYIOT-17051-NRF51822">
 <pin name="VDD" x="0" y="25.4" length="middle" direction="pwr" rot="R270"/>
 <pin name="GND" x="2.54" y="-27.94" length="middle" direction="pwr" rot="R90"/>
@@ -1169,6 +1169,21 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <wire x1="10.16" y1="-2.54" x2="-10.16" y2="-2.54" width="0.508" layer="94"/>
 <wire x1="-10.16" y1="-2.54" x2="-10.16" y2="10.16" width="0.508" layer="94"/>
 <text x="-10.16" y="12.7" size="1.778" layer="95" font="vector">&gt;NAME</text>
+</symbol>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1602,22 +1617,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BAS16" prefix="D">
-<gates>
-<gate name="G$1" symbol="DIODE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="HOLYIOT-17051-NRF51822" prefix="U">
 <gates>
 <gate name="G$1" symbol="HOLYIOT-17051-NRF51822" x="0" y="0"/>
@@ -1675,6 +1674,22 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
 <connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MBR0540T1" prefix="D">
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6563,7 +6578,6 @@ Source: www.kingbright.com</description>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="Q4" library="tuetuopay" deviceset="AO3401" device=""/>
-<part name="D1" library="tuetuopay" deviceset="BAS16" device=""/>
 <part name="R16" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
@@ -6626,6 +6640,7 @@ Source: www.kingbright.com</description>
 <part name="R31" library="tuetuopay" deviceset="R" device="R0603" value="100k"/>
 <part name="+3V19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="D1" library="tuetuopay" deviceset="MBR0540T1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8519,7 +8534,6 @@ so feed it power when done.</text>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
 <instance part="Q4" gate="G$1" x="83.82" y="106.68"/>
-<instance part="D1" gate="G$1" x="76.2" y="101.6"/>
 <instance part="R16" gate="G$1" x="71.12" y="93.98" rot="R90"/>
 <instance part="GND27" gate="1" x="71.12" y="83.82"/>
 <instance part="JP7" gate="A" x="93.98" y="129.54"/>
@@ -8540,6 +8554,7 @@ so feed it power when done.</text>
 <instance part="P+6" gate="1" x="38.1" y="48.26"/>
 <instance part="C20" gate="&gt;NAME" x="38.1" y="30.48" rot="MR0"/>
 <instance part="C21" gate="&gt;NAME" x="83.82" y="30.48"/>
+<instance part="D1" gate="G$1" x="76.2" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -8551,11 +8566,11 @@ so feed it power when done.</text>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="71.12" y1="101.6" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="71.12" y1="101.6" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
 <junction x="71.12" y="101.6"/>
 <wire x1="71.12" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
 <label x="66.04" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="73.66" y1="101.6" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8640,14 +8655,14 @@ so feed it power when done.</text>
 <wire x1="190.5" y1="91.44" x2="190.5" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="78.74" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="D"/>
 <wire x1="83.82" y1="101.6" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="101.6" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
-<junction x="83.82" y="101.6"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="99.06" y1="101.6" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="78.74" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
+<junction x="83.82" y="101.6"/>
 </segment>
 <segment>
 <pinref part="C19" gate="&gt;NAME" pin="1"/>
