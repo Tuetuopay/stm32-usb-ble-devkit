@@ -179,7 +179,8 @@
                     "layers": [
                         22,
                         26,
-                        52
+                        52,
+                        201
                     ],
                     "milling": false,
                     "name": "Silkscreen Bottom",
