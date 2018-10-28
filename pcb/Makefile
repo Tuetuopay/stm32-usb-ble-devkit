@@ -15,7 +15,7 @@ GERBERS = copper_bottom.gbr copper_top.gbr \
 
 .PHONY: clean sch-pdf brd-pdf gerbers
 
-all: sch-pdf brd-pdf gerbers.zip
+all: sch-pdf brd-pdf gerber.zip
 
 clean:
 	$(RM) $(SCH).pdf $(BRD).pdf
@@ -32,6 +32,6 @@ gerbers: $(GERBERS:%=gerber/%)
 gerber:
 	mkdir -p $@
 $(GERBERS:%=gerber/%): $(BRD) gerber
-	eagle -X -N -d CAMJOB -j $(CAM) -o . $<
+	$(EAGLE) -X -N -d CAMJOB -j $(CAM) -o . $<
 gerber.zip: $(GERBERS:%=gerber/%)
 	zip -r $@ $^
