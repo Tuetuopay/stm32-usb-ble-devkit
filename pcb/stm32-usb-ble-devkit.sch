@@ -6648,7 +6648,6 @@ Source: www.kingbright.com</description>
 <part name="TP9" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 <part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 <part name="TP11" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
-<part name="TP12" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 <part name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 <part name="LED7" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3"/>
 <part name="LED8" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3"/>
@@ -7396,25 +7395,21 @@ UART switch</text>
 <instance part="GND31" gate="1" x="203.2" y="101.6"/>
 <instance part="C17" gate="&gt;NAME" x="205.74" y="165.1" rot="R90"/>
 <instance part="GND32" gate="1" x="213.36" y="160.02"/>
-<instance part="TP8" gate="G$1" x="241.3" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="252.73" y="151.384" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="243.84" y="151.13" size="1.778" layer="97" rot="R90"/>
+<instance part="TP8" gate="G$1" x="241.3" y="142.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="252.73" y="143.764" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="243.84" y="143.51" size="1.778" layer="97" rot="R90"/>
 </instance>
 <instance part="TP9" gate="G$1" x="241.3" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="252.73" y="146.304" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="243.84" y="146.05" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP10" gate="G$1" x="160.02" y="144.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="146.05" y="143.256" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="157.48" y="143.51" size="1.778" layer="97" rot="R270"/>
+<instance part="TP10" gate="G$1" x="241.3" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="255.27" y="148.844" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="243.84" y="148.59" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP11" gate="G$1" x="160.02" y="142.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="146.05" y="140.716" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="157.48" y="140.97" size="1.778" layer="97" rot="R270"/>
-</instance>
-<instance part="TP12" gate="G$1" x="172.72" y="119.38" smashed="yes" rot="R270">
-<attribute name="NAME" x="166.37" y="120.396" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="170.18" y="118.11" size="1.778" layer="97" rot="R270"/>
+<instance part="TP11" gate="G$1" x="241.3" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="255.27" y="151.384" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="243.84" y="151.13" size="1.778" layer="97" rot="R90"/>
 </instance>
 <instance part="JP8" gate="A" x="152.4" y="88.9"/>
 <instance part="LED7" gate="G$1" x="215.9" y="63.5"/>
@@ -8060,11 +8055,7 @@ UART switch</text>
 <pinref part="U5" gate="G$1" pin="SWDIO/NRST"/>
 <wire x1="180.34" y1="116.84" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
 <label x="175.26" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="TP12" gate="G$1" pin="TP"/>
 <wire x1="177.8" y1="116.84" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="119.38" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="119.38" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
-<junction x="177.8" y="116.84"/>
 </segment>
 </net>
 <net name="NRF_SWCLK" class="0">
@@ -8074,36 +8065,12 @@ UART switch</text>
 <label x="175.26" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="NRF_DBG_TP_2" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="P0.19"/>
-<wire x1="180.34" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="TP10" gate="G$1" pin="TP"/>
-<label x="162.56" y="144.78" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="NRF_DBG_TP_3" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="P0.20"/>
-<wire x1="180.34" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="TP11" gate="G$1" pin="TP"/>
-<label x="162.56" y="142.24" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="NRF_DBG_TP_0" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="P0.01"/>
-<wire x1="220.98" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="TP8" gate="G$1" pin="TP"/>
-<label x="226.06" y="149.86" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="NRF_DBG_TP_1" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="P0.03"/>
 <wire x1="220.98" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="TP9" gate="G$1" pin="TP"/>
-<label x="226.06" y="144.78" size="1.27" layer="95"/>
+<label x="223.52" y="144.78" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="NRF_RX" class="0">
@@ -8286,6 +8253,30 @@ UART switch</text>
 <pinref part="U2" gate="G$1" pin="PB11"/>
 <wire x1="93.98" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
 <label x="99.06" y="81.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="NRF_DBG_TP_0" class="0">
+<segment>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+<pinref part="U5" gate="G$1" pin="P0.04"/>
+<wire x1="238.76" y1="142.24" x2="220.98" y2="142.24" width="0.1524" layer="91"/>
+<label x="223.52" y="142.24" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="NRF_DBG_TP_2" class="0">
+<segment>
+<pinref part="TP10" gate="G$1" pin="TP"/>
+<pinref part="U5" gate="G$1" pin="P0.02"/>
+<wire x1="238.76" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
+<label x="223.52" y="147.32" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="NRF_DBG_TP_3" class="0">
+<segment>
+<pinref part="TP11" gate="G$1" pin="TP"/>
+<pinref part="U5" gate="G$1" pin="P0.01"/>
+<wire x1="238.76" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
+<label x="223.52" y="149.86" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>
