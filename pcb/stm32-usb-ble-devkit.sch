@@ -6922,6 +6922,10 @@ Source: www.kingbright.com</description>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP1" library="tuetuopay" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="JP2" library="tuetuopay" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="+3V20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8862,6 +8866,10 @@ so feed it power when done.</text>
 <instance part="GND29" gate="1" x="195.58" y="66.04"/>
 <instance part="R33" gate="G$1" x="213.36" y="78.74" rot="R90"/>
 <instance part="C23" gate="&gt;NAME" x="220.98" y="81.28"/>
+<instance part="JP2" gate="A" x="129.54" y="35.56"/>
+<instance part="P+4" gate="1" x="121.92" y="45.72"/>
+<instance part="+3V20" gate="G$1" x="114.3" y="45.72"/>
+<instance part="GND35" gate="1" x="121.92" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -8941,6 +8949,12 @@ so feed it power when done.</text>
 <wire x1="220.98" y1="71.12" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
 <junction x="213.36" y="71.12"/>
 </segment>
+<segment>
+<pinref part="GND35" gate="1" pin="GND"/>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="121.92" y1="27.94" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="33.02" x2="127" y2="33.02" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="USB_FS_VBUS" class="0">
 <segment>
@@ -9010,6 +9024,12 @@ so feed it power when done.</text>
 <wire x1="177.8" y1="93.98" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="91.44" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P+4" gate="1" pin="+5V"/>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="121.92" y1="43.18" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="USB_FS_HS_VBUS" class="0">
 <segment>
@@ -9033,6 +9053,12 @@ so feed it power when done.</text>
 <pinref part="+3V24" gate="G$1" pin="+3V3"/>
 <wire x1="83.82" y1="45.72" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
 <junction x="83.82" y="35.56"/>
+</segment>
+<segment>
+<pinref part="+3V20" gate="G$1" pin="+3V3"/>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="114.3" y1="43.18" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="35.56" x2="127" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_FS_ON" class="0">
