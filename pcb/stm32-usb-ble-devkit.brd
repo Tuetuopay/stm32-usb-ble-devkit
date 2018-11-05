@@ -729,10 +729,6 @@
 <text x="68.4" y="6.75" size="0.9" layer="51" font="vector">P0.13</text>
 <text x="76.05" y="6.75" size="0.9" layer="51" font="vector">P0.16</text>
 <circle x="4.5" y="45.5" radius="3.5" width="0.15" layer="51"/>
-<circle x="4.5" y="4.5" radius="3.5" width="0.1524" layer="52"/>
-<circle x="85.5" y="4.5" radius="3.5" width="0.1524" layer="52"/>
-<circle x="85.5" y="45.5" radius="3.5" width="0.1524" layer="52"/>
-<circle x="4.5" y="45.5" radius="3.5" width="0.15" layer="52"/>
 <circle x="4.5" y="4.5" radius="3.5" width="0.1524" layer="41"/>
 <circle x="4.5" y="4.5" radius="3.5" width="0.1524" layer="42"/>
 <circle x="4.5" y="45.5" radius="3.5" width="0.15" layer="42"/>
@@ -750,7 +746,7 @@
 <text x="31.2" y="29.25" size="0.9" layer="21" rot="R270">PB1</text>
 <text x="29.85" y="29.25" size="0.9" layer="21" rot="R270">PB2</text>
 <text x="28.5" y="29.25" size="0.9" layer="21" rot="R270">PB10</text>
-<text x="11.85" y="1.1" size="0.9" layer="21">https://github.com/Tuetuopay/stm32-usb-ble-devkit</text>
+<text x="11.85" y="1.1" size="0.9" layer="51">https://github.com/Tuetuopay/stm32-usb-ble-devkit</text>
 <wire x1="15.3" y1="9.15" x2="15.3" y2="8.85" width="0.15" layer="41"/>
 <wire x1="13.95" y1="35.25" x2="13.95" y2="34.95" width="0.15" layer="41"/>
 <wire x1="24.6" y1="10.5" x2="25.2" y2="10.5" width="0.15" layer="41"/>
@@ -12092,6 +12088,9 @@ MISO
 MOSI
 
 GND</text>
+<wire x1="57.9" y1="38.4" x2="58.2" y2="38.4" width="0.15" layer="41"/>
+<wire x1="59.7" y1="38.4" x2="60" y2="38.4" width="0.15" layer="41"/>
+<text x="8.1" y="1.05" size="0.9" layer="51">v1.1</text>
 </plain>
 <libraries>
 <library name="tuetuopay">
@@ -13977,7 +13976,7 @@ Design rules for single and two layer boards.
 <via x="68.4" y="40.2" extent="1-16" drill="0.3"/>
 <via x="65.4" y="44.4" extent="1-16" drill="0.3"/>
 <via x="55.2" y="42" extent="1-16" drill="0.3"/>
-<via x="57" y="35.4" extent="1-16" drill="0.3"/>
+<via x="56.4" y="35.55" extent="1-16" drill="0.3"/>
 <via x="48.6" y="49.2" extent="1-16" drill="0.3"/>
 <via x="55.2" y="48" extent="1-16" drill="0.3"/>
 <via x="36.6" y="49.2" extent="1-16" drill="0.3"/>
@@ -14567,19 +14566,19 @@ Design rules for single and two layer boards.
 <signal name="STM_DBG_TP_0">
 <contactref element="TP4" pad="TP"/>
 <contactref element="U2" pad="56"/>
-<wire x1="23.35" y1="15.03" x2="23.35" y2="13.9" width="0.15" layer="1"/>
-<wire x1="23.35" y1="13.9" x2="23.25" y2="13.8" width="0.15" layer="1"/>
-<wire x1="23.25" y1="13.8" x2="23.25" y2="8.25" width="0.15" layer="1"/>
-<wire x1="23.25" y1="8.25" x2="22.05" y2="7.05" width="0.15" layer="1"/>
+<wire x1="23.35" y1="13.71673125" x2="23.325" y2="13.69173125" width="0.15" layer="1"/>
+<wire x1="23.35" y1="15.03" x2="23.35" y2="13.71673125" width="0.15" layer="1"/>
+<wire x1="23.325" y1="13.69173125" x2="23.325" y2="8.325" width="0.15" layer="1"/>
+<wire x1="23.325" y1="8.325" x2="22.05" y2="7.05" width="0.15" layer="1"/>
 </signal>
 <signal name="STM_DBG_TP_1">
 <contactref element="TP5" pad="TP"/>
 <contactref element="U2" pad="57"/>
 <wire x1="23.85" y1="15.03" x2="23.85" y2="13.7924625" width="0.15" layer="1"/>
 <wire x1="23.85" y1="13.7924625" x2="23.625" y2="13.5674625" width="0.15" layer="1"/>
-<wire x1="23.625" y1="9.525" x2="23.85" y2="9.3" width="0.15" layer="1"/>
-<wire x1="23.85" y1="9.3" x2="23.85" y2="7.05" width="0.15" layer="1"/>
-<wire x1="23.625" y1="13.5674625" x2="23.625" y2="9.525" width="0.15" layer="1"/>
+<wire x1="23.625" y1="13.125" x2="23.85" y2="12.9" width="0.15" layer="1"/>
+<wire x1="23.85" y1="12.9" x2="23.85" y2="7.05" width="0.15" layer="1"/>
+<wire x1="23.625" y1="13.5674625" x2="23.625" y2="13.125" width="0.15" layer="1"/>
 </signal>
 <signal name="STM_DBG_TP_2">
 <contactref element="TP6" pad="TP"/>
@@ -14913,8 +14912,9 @@ Design rules for single and two layer boards.
 <wire x1="16.05" y1="35.4" x2="16.05" y2="36.6" width="0.4" layer="16"/>
 <wire x1="16.05" y1="36.6" x2="17.55" y2="38.1" width="0.4" layer="16"/>
 <contactref element="JP2" pad="1"/>
-<wire x1="14.9" y1="47.4" x2="10.19" y2="47.4" width="0.4" layer="1"/>
-<wire x1="10.19" y1="47.4" x2="9.45" y2="48.14" width="0.4" layer="1"/>
+<wire x1="14.9" y1="47.4" x2="11.84" y2="47.4" width="0.4" layer="1"/>
+<wire x1="11.84" y1="47.4" x2="11.1" y2="48.14" width="0.4" layer="1"/>
+<wire x1="11.1" y1="48.14" x2="9.45" y2="48.14" width="0.4" layer="1"/>
 </signal>
 <signal name="STM_DBG_PIN2">
 <contactref element="JP9" pad="3"/>
@@ -15013,18 +15013,17 @@ Design rules for single and two layer boards.
 <signal name="NRF_DBG_TP_0">
 <contactref element="TP8" pad="TP"/>
 <contactref element="U5" pad="11"/>
-<wire x1="58.65" y1="34.05" x2="57.825" y2="34.875" width="0.15" layer="1"/>
-<wire x1="57.825" y1="34.875" x2="57.825" y2="35.85" width="0.15" layer="1"/>
-<wire x1="57.825" y1="35.85" x2="55.35" y2="38.325" width="0.15" layer="1"/>
+<wire x1="58.65" y1="34.05" x2="57.375" y2="35.325" width="0.15" layer="1"/>
+<wire x1="57.375" y1="35.325" x2="57.375" y2="36.3" width="0.15" layer="1"/>
+<wire x1="57.375" y1="36.3" x2="55.35" y2="38.325" width="0.15" layer="1"/>
 <wire x1="55.35" y1="38.325" x2="55.35" y2="38.4" width="0.15" layer="1"/>
 </signal>
 <signal name="NRF_DBG_TP_2">
 <contactref element="TP10" pad="TP"/>
 <contactref element="U5" pad="12"/>
-<wire x1="60.65" y1="34.05" x2="60.65" y2="34.88326875" width="0.15" layer="1"/>
-<wire x1="60.65" y1="34.88326875" x2="59.825" y2="35.70826875" width="0.15" layer="1"/>
-<wire x1="59.825" y1="37.525" x2="58.95" y2="38.4" width="0.15" layer="1"/>
-<wire x1="59.825" y1="35.70826875" x2="59.825" y2="37.525" width="0.15" layer="1"/>
+<wire x1="59.675" y1="35.025" x2="59.675" y2="37.675" width="0.15" layer="1"/>
+<wire x1="59.675" y1="37.675" x2="58.95" y2="38.4" width="0.15" layer="1"/>
+<wire x1="60.65" y1="34.05" x2="59.675" y2="35.025" width="0.15" layer="1"/>
 </signal>
 <signal name="NRF_DBG_TP_3">
 <contactref element="TP11" pad="TP"/>
