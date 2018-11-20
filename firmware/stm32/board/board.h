@@ -66,7 +66,7 @@
 #define GPIOA_SPI_SCK               5U
 #define GPIOA_SPI_MISO              6U
 #define GPIOA_SPI_MOSI              7U
-#define GPIOA_PIN8                  8U
+#define GPIOA_USB_FS_ON             8U
 #define GPIOA_USB_FS_VBUS           9U
 #define GPIOA_USB_FS_ID             10U
 #define GPIOA_USB_FS_DM             11U
@@ -86,7 +86,7 @@
 #define GPIOB_DBG_TP2               8U
 #define GPIOB_DBG_TP3               9U
 #define GPIOB_DBG_P3                10U
-#define GPIOB_PIN11                 11U
+#define GPIOB_USB_HS_ON             11U
 #define GPIOB_USB_HS_ID             12U
 #define GPIOB_USB_HS_VBUS           13U
 #define GPIOB_USB_HS_DM             14U
@@ -137,6 +137,7 @@
 #define LINE_SPI_SCK                PAL_LINE(GPIOA, 5U)
 #define LINE_SPI_MISO               PAL_LINE(GPIOA, 6U)
 #define LINE_SPI_MOSI               PAL_LINE(GPIOA, 7U)
+#define LINE_USB_FS_ON              PAL_LINE(GPIOA, 8U)
 #define LINE_USB_FS_VBUS            PAL_LINE(GPIOA, 9U)
 #define LINE_USB_FS_ID              PAL_LINE(GPIOA, 10U)
 #define LINE_USB_FS_DM              PAL_LINE(GPIOA, 11U)
@@ -155,6 +156,7 @@
 #define LINE_DBG_TP2                PAL_LINE(GPIOB, 8U)
 #define LINE_DBG_TP3                PAL_LINE(GPIOB, 9U)
 #define LINE_DBG_P3                 PAL_LINE(GPIOB, 10U)
+#define LINE_USB_HS_ON              PAL_LINE(GPIOB, 11U)
 #define LINE_USB_HS_ID              PAL_LINE(GPIOB, 12U)
 #define LINE_USB_HS_VBUS            PAL_LINE(GPIOB, 13U)
 #define LINE_USB_HS_DM              PAL_LINE(GPIOB, 14U)
