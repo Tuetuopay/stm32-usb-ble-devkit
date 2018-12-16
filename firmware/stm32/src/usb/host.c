@@ -11,6 +11,7 @@
 #include <usbh/dev/hid.h>
 
 #include "usb/host.h"
+#include "util/hid_keys.h"
 #include "logger.h"
 
 // Which USBs are active, i.e. which should we poll?
@@ -92,6 +93,8 @@ static THD_FUNCTION(usbHostPollThread, arg) {
 
 	chRegSetThreadName("USB Host Poller");
 
+	uint8_t lastReport[HID_REPORT_LEN] = {0};
+
 	while (true) {
 		// TODO switch to proper blocking events
 		while (!fsActive && !hsActive)
@@ -104,10 +107,21 @@ static THD_FUNCTION(usbHostPollThread, arg) {
 			uint8_t *report = reports[reportStart];
 			if (++reportStart >= 32) reportStart = 0;
 
-			lognl("HID report: modifier = %2x, ??? = %2x, "
-			      "keys = %2x %2x %2x %2x %2x %2x",
-				  report[0], report[1], report[2], report[3],
-				  report[4], report[5], report[6], report[7]);
+			for (int i = 2; i < HID_REPORT_LEN; i++) {
+				bool found = false;
+
+				if (report[i] == 0) break;
+
+				for (int j = 2; j < HID_REPORT_LEN; j++) {
+					if (lastReport[j] == 0) break;
+					if (lastReport[j] == report[i]) found = true;
+				}
+
+				if (!found)
+					lognl("Key: %c", code2char(report[i], report[0]));
+			}
+
+			memcpy(lastReport, report, HID_REPORT_LEN);
 		}
 
 		chThdSleepMilliseconds(10);

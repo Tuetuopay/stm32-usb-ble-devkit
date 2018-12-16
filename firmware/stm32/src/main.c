@@ -27,8 +27,6 @@ int main(void) {
 	palSetLine(LINE_LED0);
 
 	while (true) {
-		lognl("Blip");
-
 		palClearLine(LINE_LED0);
 		chThdSleepMilliseconds(50);
 		palSetLine(LINE_LED0);
