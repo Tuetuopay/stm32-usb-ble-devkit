@@ -1,0 +1,32 @@
+pipeline:
+  chibios:
+    image: stronglytyped/arm-none-eabi-gcc
+    commands:
+      - cd firmware
+      - '[ -d ChibiOS ] || git clone https://github.com/ChibiOS/ChibiOS.git'
+      - cd ChibiOS
+      - git checkout stable_18.2.x
+      - git pull
+
+  chibios-contrib:
+    image: stronglytyped/arm-none-eabi-gcc
+    commands:
+      - cd firmware
+      - '[ -d ChibiOS-Contrib ] || git clone https://github.com/Tuetuopay/ChibiOS-Contrib.git'
+      - cd ChibiOS-Contrib
+      - git checkout usbh-18.2.x
+      - git pull
+
+  build-stm32:
+    image: stronglytyped/arm-none-eabi-gcc
+    commands:
+      - 'make -j$(nproc) -C firmware/stm32'
+
+  notify:
+    image: appleboy/drone-telegram
+    secrets: [ TELEGRAM_TOKEN, PLUGIN_TO ]
+    when:
+      status: [ success, failure ]
+    message: |
+      ${DRONE_COMMIT_MESSAGE} {{ build.status }}
+      (${DRONE_BUILD_LINK})
