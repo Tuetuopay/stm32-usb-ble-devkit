@@ -9,6 +9,7 @@
 #include <chprintf.h>
 
 #include "logger.h"
+#include "usb/arbiter.h"
 
 int main(void) {
 	// Chibios init stuff
@@ -17,6 +18,7 @@ int main(void) {
 
 	// Misc modules
 	loggerInit();
+	usbArbiterInit();
 
 	// Heartbeat
 	palSetLineMode(LINE_LED0, PAL_MODE_OUTPUT_OPENDRAIN);

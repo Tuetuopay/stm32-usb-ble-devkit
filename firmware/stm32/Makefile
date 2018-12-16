@@ -114,7 +114,7 @@ LDSCRIPT = STM32F205xB.ld
 # setting.
 CSRC = $(ALLCSRC) $(TESTSRC) \
        src/main.c \
-       src/logger.c
+       src/logger.c src/usb/arbiter.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
