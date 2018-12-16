@@ -11,6 +11,7 @@
 #include <hal.h>
 
 #include "usb/arbiter.h"
+#include "usb/host.h"
 #include "logger.h"
 
 static void onOtgEvent(void *args);
@@ -121,14 +122,14 @@ static void handleTransition(otg_status_t from, otg_status_t to, bool isFs) {
 	case OTG_STATUS_HOST:
 		switch (to) {
 		case OTG_STATUS_PWR: // Host -> powered host : be a host
-			// TODO start host driver
+			usbHostStart(isFs);
 			break;
 		default:
 			break;
 		}
 		break;
 	case OTG_STATUS_PWR: // Power -> device is the only possible transition
-		// TODO stop host driver
+		usbHostStop(isFs);
 		// Power off the device. This will trigger the transition device -> idle
 		palClearLine(busOnLine);
 		break;

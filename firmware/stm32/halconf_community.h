@@ -98,7 +98,7 @@
  * @brief   Enables the USBH subsystem.
  */
 #if !defined(HAL_USE_USBH) || defined(__DOXYGEN__)
-#define HAL_USE_USBH                FALSE
+#define HAL_USE_USBH                TRUE
 #endif
 
 /**
@@ -191,12 +191,12 @@
 #define HAL_USBH_USE_UVC                              FALSE
 
 /* HID */
-#define HAL_USBH_USE_HID                              FALSE
-#define HAL_USBHHID_MAX_INSTANCES                     2
+#define HAL_USBH_USE_HID                              TRUE
+#define HAL_USBHHID_MAX_INSTANCES                     4
 #define HAL_USBHHID_USE_INTERRUPT_OUT                 FALSE
 
 /* HUB */
-#define HAL_USBH_USE_HUB                              FALSE
+#define HAL_USBH_USE_HUB                              TRUE
 
 #define HAL_USBHHUB_MAX_INSTANCES                     1
 #define HAL_USBHHUB_MAX_PORTS                         6

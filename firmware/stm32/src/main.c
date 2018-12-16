@@ -10,6 +10,7 @@
 
 #include "logger.h"
 #include "usb/arbiter.h"
+#include "usb/host.h"
 
 int main(void) {
 	// Chibios init stuff
@@ -19,6 +20,7 @@ int main(void) {
 	// Misc modules
 	loggerInit();
 	usbArbiterInit();
+	usbHostInit();
 
 	// Heartbeat
 	palSetLineMode(LINE_LED0, PAL_MODE_OUTPUT_OPENDRAIN);
