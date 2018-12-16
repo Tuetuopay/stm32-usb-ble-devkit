@@ -3,9 +3,9 @@ pipeline:
     image: stronglytyped/arm-none-eabi-gcc
     commands:
       - cd firmware
-      - '[ -d ChibiOS ] || git clone https://github.com/ChibiOS/ChibiOS.git'
+      - '[ -d ChibiOS ] || git clone https://github.com/Tuetuopay/ChibiOS.git'
       - cd ChibiOS
-      - git checkout stable_18.2.x
+      - git checkout usbh-compat
       - git pull
 
   chibios-contrib:
