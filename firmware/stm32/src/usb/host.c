@@ -148,9 +148,9 @@ static void hidReportCallback(USBHHIDDriver *hidp, uint16_t len) {
 	uint8_t *report = (uint8_t *)hidp->config->report_buffer;
 
 	if (hidp->type == USBHHID_DEVTYPE_BOOT_KEYBOARD) {
-		if (++reportEnd >= 32) reportEnd = 0;
-		if (reportEnd == reportStart) return; // Drop report
-
+		if (reportEnd == reportStart - 1 || (reportEnd == 31 && reportStart == 0))
+			return; // Drop report
 		memcpy(&reports[reportEnd], report, HID_REPORT_LEN);
+		if (++reportEnd >= 32) reportEnd = 0;
 	}
 }
