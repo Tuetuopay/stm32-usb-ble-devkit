@@ -53,6 +53,9 @@ void usbArbiterInit(void) {
 	// Start arbiter thread
 	chThdCreateStatic(waUsbArbiterThread, sizeof(waUsbArbiterThread),
 	                  NORMALPRIO + 10, usbArbiterThread, NULL);
+
+	// Force OTG event to get initial state
+	onOtgEvent(NULL);
 }
 
 // Called when any of the ID or VBUS pins transitions
