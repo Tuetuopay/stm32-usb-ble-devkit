@@ -34,6 +34,7 @@ static void hidReportCallback(USBHHIDDriver *hidp, uint16_t len);
 static USBH_DEFINE_BUFFER(
 		uint8_t report[HAL_USBHHID_MAX_INSTANCES][HID_REPORT_LEN]);
 static USBHHIDConfig hidcfg[HAL_USBHHID_MAX_INSTANCES];
+USBH_DEFINE_BUFFER(uint8_t ledsState);
 
 // Report queue
 static uint8_t reports[32][8];
@@ -153,6 +154,11 @@ static THD_FUNCTION(hidThread, arg) {
 				break;
 			}
 
+		// TODO find a better way to send the initial report (when
+		// keyboard is plugged in), instead of just sending all the
+		// time the current LED state
+		usbHostWriteReport(&ledsState, 1);
+
 		chThdSleepMilliseconds(200);
 	}
 }
@@ -183,4 +189,8 @@ void usbHostWriteReport(uint8_t *buf, size_t size) {
 		    usbhhidGetType(&USBHHIDD[i]) == USBHHID_DEVTYPE_BOOT_KEYBOARD)
 			usbhhidSetReport(&USBHHIDD[i], 0, USBHHID_REPORTTYPE_OUTPUT,
 			                 buf, size);
+
+	// Size of 1 is probably the LEDs state
+	if (size == 1)
+		ledsState = *buf;
 }
