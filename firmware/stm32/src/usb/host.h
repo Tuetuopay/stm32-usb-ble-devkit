@@ -18,4 +18,11 @@ void usbHostStart(bool isFs);
  */
 void usbHostStop(bool isFs);
 
+/**
+ * Sends a host report (OUT) to all devices
+ * @param buf      report buffer
+ * @param n        report buffer size
+ */
+void usbHostWriteReport(uint8_t *buf, size_t size);
+
 #endif

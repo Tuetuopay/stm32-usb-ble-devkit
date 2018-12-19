@@ -11,6 +11,7 @@
 #include <usbh/dev/hid.h>
 
 #include "usb/host.h"
+#include "usb/device.h"
 #include "util/hid_keys.h"
 #include "logger.h"
 
@@ -131,7 +132,7 @@ static THD_FUNCTION(usbHostPollThread, arg) {
 static THD_FUNCTION(hidThread, arg) {
 	(void)arg;
 
-	chRegSetThreadName("USB HID Thread");
+	chRegSetThreadName("USB Host HID Thread");
 
 	while (true) {
 		// TODO switch to proper blocking events
@@ -166,5 +167,20 @@ static void hidReportCallback(USBHHIDDriver *hidp, uint16_t len) {
 			return; // Drop report
 		memcpy(&reports[reportEnd], report, HID_REPORT_LEN);
 		if (++reportEnd >= 32) reportEnd = 0;
+
+		usbDeviceWriteReport(report, HID_REPORT_LEN);
 	}
+}
+
+void usbHostWriteReport(uint8_t *buf, size_t size) {
+	// None active, nothing to see here
+	if (!fsActive && !hsActive)
+		return;
+
+	for (int i = 0; i < HAL_USBHHID_MAX_INSTANCES; i++)
+		// Chech if the HID instance is active
+		if (usbhhidGetState(&USBHHIDD[i]) == USBHHID_STATE_READY &&
+		    usbhhidGetType(&USBHHIDD[i]) == USBHHID_DEVTYPE_BOOT_KEYBOARD)
+			usbhhidSetReport(&USBHHIDD[i], 0, USBHHID_REPORTTYPE_OUTPUT,
+			                 buf, size);
 }

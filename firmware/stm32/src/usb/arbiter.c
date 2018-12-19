@@ -12,6 +12,7 @@
 
 #include "usb/arbiter.h"
 #include "usb/host.h"
+#include "usb/device.h"
 #include "logger.h"
 
 static void onOtgEvent(void *args);
@@ -116,7 +117,7 @@ static void handleTransition(otg_status_t from, otg_status_t to, bool isFs) {
 			palSetLine(busOnLine);
 			break;
 		case OTG_STATUS_DEV:
-			// TODO start device driver
+			usbDeviceStart(isFs);
 			break;
 		default:
 			break;
@@ -137,8 +138,7 @@ static void handleTransition(otg_status_t from, otg_status_t to, bool isFs) {
 		palClearLine(busOnLine);
 		break;
 	case OTG_STATUS_DEV:
-		// TODO stop device driver ONLY if loaded (in case of power -> device
-		// transition)
+		usbDeviceStop(isFs);
 		break;
 	}
 }

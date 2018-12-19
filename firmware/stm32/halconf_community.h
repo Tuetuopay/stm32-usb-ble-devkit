@@ -108,6 +108,13 @@
 #define HAL_USE_USB_MSD             FALSE
 #endif
 
+/**
+ * @brief   Enables the USB HID subsystem.
+ */
+#if !defined(HAL_USE_USB_HID) || defined(__DOXYGEN__)
+#define HAL_USE_USB_HID             TRUE
+#endif
+
 /*===========================================================================*/
 /* FSMCNAND driver related settings.                                         */
 /*===========================================================================*/

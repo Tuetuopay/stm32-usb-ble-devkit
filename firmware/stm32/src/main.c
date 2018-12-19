@@ -11,6 +11,7 @@
 #include "logger.h"
 #include "usb/arbiter.h"
 #include "usb/host.h"
+#include "usb/device.h"
 
 int main(void) {
 	// Chibios init stuff
@@ -21,6 +22,7 @@ int main(void) {
 	loggerInit();
 	usbArbiterInit();
 	usbHostInit();
+	usbDeviceInit();
 
 	// Heartbeat
 	palSetLineMode(LINE_LED0, PAL_MODE_OUTPUT_OPENDRAIN);
