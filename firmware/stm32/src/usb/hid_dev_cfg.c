@@ -288,32 +288,14 @@ static void usbEventCb2(USBDriver *usbp, usbevent_t event) {
  *  - SetProtocol
  * The following are optional:
  *  - SetReport
+ *
+ * Most of it is already handled by hidRequestsHook
  */
-
-uint8_t kbdProto = 1, kbdIdle = 0;
-uint16_t kbdLeds = 0;
-
-#include "logger.h"
-
-static bool usbRequestCb(USBDriver *usbp) {
-	if ((usbp->setup[0] & USB_RTYPE_TYPE_MASK) == USB_RTYPE_TYPE_CLASS) {
-		switch (usbp->setup[1]) {
-		case HID_SET_REPORT:
-			palToggleLine(LINE_LED1);
-			break;
-		}
-	}
-
-	return hidRequestsHook(usbp);
-}
-
-// TODO kbd_sof_cb
-// static void usbSofCb(USBDriver *usbp) { kbd_sof_cb(usbp); }
 
 // USB Drivers configurations
 const USBConfig usbcfg[2] = {
-	{usbEventCb1, usbGetDescriptor, usbRequestCb, NULL},
-	{usbEventCb2, usbGetDescriptor, usbRequestCb, NULL}
+	{usbEventCb1, usbGetDescriptor, hidRequestsHook, NULL},
+	{usbEventCb2, usbGetDescriptor, hidRequestsHook, NULL}
 };
 
 // USB HID driver configuration
